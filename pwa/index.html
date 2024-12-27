@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    <title>MBApps</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Theme Android -->
+    <meta name="theme-color" content="#000">
+    <!--  Theme iOS -->
+    <link rel="apple-touch-icon" sizes="1024x1024" href="icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+<meta name="KeyWords" content="Ferby">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!--For users deploying their apps to Windows 8.1 or Android Gingerbread, platformOverrided.js
+    will inject platform-specific code from the /merges folder -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="http://blog.ikhuerta.com/jsDownload/dollar_get.js" type="text/javascript"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-messaging.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    
+    <script src="js/platformOverrides.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular/angular.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js?v=1"></script>
+    <script src="js/globalFunctions.js"></script>
+    <script src="js/services.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.onvisible.min.js"></script>
+    <script src="lib/JsBarcode.all.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.6.1/alasql.min.js"></script>
+    <link href="lib/ion-floating-menu-master/dist/ion-floating-menu.css" rel="stylesheet" />
+    <script src="lib/ion-floating-menu-master/dist/ion-floating-menu.min.js"></script>
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="lib/node-waves/dist/waves.min.css" rel="stylesheet" />
+    <script src="lib/node-waves/dist/waves.min.js"></script>
+    <script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
+    <script src="lib/qrcodejs-master/qrcode.min.js" type="text/javascript"></script>
+    <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+
+
+    <link href="lib/scratchcard/scratchcard.css" rel="stylesheet">
+    <link href="lib/scratchcard/normalize.css" rel="stylesheet">
+    <script src="lib/scratchcard/scratchcard.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+     <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQgUEoX1RkGiNcuhAol-YQ7SjyTfLUI1c&libraries=places">
+    </script>
+  </head>
+  <style>
+    @font-face {
+      font-family: "Nuevofont";
+      src: url("./font/AvenirLTStd-Book.otf");
+    }
+    @font-face {
+      font-family: "Roboto-Regular";
+      src: url("./font/Roboto-Regular.ttf");
+    }
+  </style>
+  <body ng-app="starter" style="font-family: 'Roboto-Regular';">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

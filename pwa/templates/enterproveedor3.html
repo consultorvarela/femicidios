@@ -1,0 +1,192 @@
+<ion-view view-title="Home">
+  <ion-content class="padding">
+  <style>
+    @media only screen and (max-height:  600px) {
+      .positioncajita {
+          margin-top: -40%!important;
+      }
+    }
+    @media only screen and (min-height:  800px) {
+      .positioncajita {
+          margin-top: -15%!important;
+      }
+      .XSD{
+        padding: 10% 5% 0% 5%!important;
+      }
+      .hbubdas{
+        margin-top: 15%!important;
+      }
+    }
+    .padding {
+      padding: 0px!important;
+    }
+    .Centro{
+      text-align: center;
+    }
+    .Izquierda{
+      text-align: left;
+    }
+    .Derechas{
+      text-align: right;
+    }
+    .Sombras{
+      -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    }
+    .DivSemicuAzul{
+      top: 0px;
+      left: 8px;
+      width: 100%;
+      height: 213px;
+      background: #0C375A 0% 0% no-repeat padding-box;
+      border-radius: 0px 0px 40px 40px;
+      opacity: 1;
+    }
+    .EspaciosLaterales{
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .Cerrar{
+      text-align: left;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Titulo5{
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+      line-height: 1;
+    }
+    .divcajita2{
+      top: 181px;
+      left: 36px;
+      width: 100%;
+      height: 489px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 1px solid #9C9C9C;
+      border-radius: 10px;
+      opacity: 1;
+      padding-top: 5%;
+    }
+    .positioncajita{
+      padding-left: 10%;
+      padding-right: 10%;
+      margin-top: -34%;
+    }
+    .Input{
+      top: 215px;
+      left: 37px;
+      height: 32px;
+      opacity: 1;
+      padding-left: 2%!important;
+      width: 100%;
+    }
+    .btnCajita{
+      top: 716px;
+      left: 37px;
+      height: 33px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 2px solid #096983;
+      border-radius: 13px;
+      opacity: 1;
+      padding-top: 1%;
+    }
+    .sigcajita{
+      top: 724px;
+      left: 158px;
+      height: 18px;
+      text-align: center;
+      font: normal normal medium 15px/18px Roboto;
+      letter-spacing: 0px;
+      color: #096983;
+      opacity: 1;
+    }
+    .XSD{
+      padding: 0% 5% 0% 5%;
+    }
+    .hbubdas{
+      margin-top: 5%;
+    }
+    .propuesta{
+      width: 95%;
+      height: 51px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #707070;
+      border-radius: 12px;
+      opacity: 1;
+      margin-left: 3%;
+      padding-top: 3%;
+      padding-left: 2%;
+    }
+    .foto{
+      top: 437px;
+      left: 61px;
+      width: 70px;
+      height: 70px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #707070;
+      border-radius: 12px;
+      opacity: 1;
+      margin-top: 3%;
+      padding-top: 5%;
+      margin-left: 3%;
+    }
+    .foto2{
+      top: 454px;
+      left: 85px;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+      line-height: 1.3;
+    }
+  </style>
+  <div class="EspaciosLaterales" style="z-index: 1;">
+    <div class="DivSemicuAzul">
+      <div class="row" style="padding-top: 5%;">
+        <div class="col Izquierda">
+          <span onclick="location.href='#/tab/user2'" class="Cerrar">X</span>
+        </div>
+        <div class="col Derechas">
+          <img src="./img/logo.png" style="width: 50%;">
+        </div>
+      </div>
+      <div class="Centro XSD">
+        <p class="Titulo5">Llena con Tus Datos</p>
+      </div>
+    </div>
+    <div class="Centro positioncajita">
+      <div class="divcajita2">
+        <input type="text" name="" placeholder="Titulo Educativo" id="titulo" class="Input"><hr>
+        <input type="text" name="" placeholder="Institución que lo Certifica" id="certifica1" class="Input"><hr>
+        <input type="text" name="" placeholder="Institución que lo Certifica" id="certifica2" class="Input"><hr>
+        <input type="text" name="" placeholder="Institución que lo Certifica" id="certifica3" class="Input"><hr>
+        <div class="Centro">
+          <div class="propuesta">
+            <input type="text" name="" placeholder="Anota en una frase corta tus destrezas de forma que nuestros usuarios conozcan tus fortalezas" id="propuesta" class="Input" style="width: 97%;">
+          </div>
+        </div>  
+<!--         <div class="foto Centro">
+          <div class="foto2">Foto<br> de<br> Perfil</div>
+        </div> -->
+        <div style="padding-top: 10%;">
+          <p>Selecciona una foto de perfil</p>
+          <img ng-click="setpic()" id="propic" src="./img/user.jpg" style="width: 33%;">
+        </div>
+      </div>
+    </div>
+    <div class="Centro hbubdas" style="padding: 10%;">
+      <div ng-click="insertar_proveedor3()" class="btnCajita">
+        <span class="sigcajita">Sigiuente</span>
+      </div>
+    </div>
+  </div>                       
+  </ion-content>
+  </ion-view>

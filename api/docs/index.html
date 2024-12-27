@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>API MR Pedidos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#home">
+      <img src="./icon.png" alt="Logo" style="width:40px;">
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Usuarios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Categorias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Chat</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Checkout
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#section5">Pedidos</a>
+          <a class="dropdown-item" href="#section5">Métodos de pago</a>
+          <a class="dropdown-item" href="#section5">Pagos en línea</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div id="home" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+      <h1>API Programación Web 1</h1>
+      <p>Sean bienvenidos todos a nuestra api.</p>
+      <p>En la presente información esta detallada cada funcionalidad que posee la api creada para su proyecto de clase.
+      </p>
+      <h5>Elementos necesarios para consumir los servicios</h5>
+      <ul>
+        <li> URL -> La dirección de envío concatenada de los parámetros : <span class="badge badge-secondary">https://apipw1.myferby.com/ws.php?</span> </li>
+        <li> Token único -> Es su numero de cuenta : <span class="badge badge-secondary">tk=t308218823</span></li>       
+        <li> Opción -> El nombre de la funcion que se desea consumir : <span class="badge badge-secondary">op=login</span></li>        
+        <li> Parámetros -> Cada funcion necesita los propios : <span class="badge badge-secondary">username=degradiz&password=algo</span></li>
+      </ul>
+      <p>Ejemplo: <span class="badge badge-secondary">https://apipw1.myferby.com/ws.php?tk=t308218823&op=usuarios</span></p>
+      <p>Los parámetros son aceptados por método <b>get</b> o <b>post</b>.</p>
+      <p>Cada funcionalidad tiene un retorno especifico y cuando existe algún error simplemente retorna un 0 como
+        respuesta</p>
+      <h5>Comportamiento de las funcionalidades</h5>
+      <div class="row">
+        <div class="col-6">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Petición</th>
+                <th>Respuesta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Crear</td>
+                <td>Id creado</td>
+              </tr>
+              <tr>
+                <td>Actualizar</td>
+                <td>Filas afectadas</td>
+              </tr>
+              <tr>
+                <td>Listar</td>
+                <td>Filas en formato json</td>
+              </tr>
+              <tr>
+                <td>Validación correcta</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Validación fallida</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Error general</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="section1" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+      <h1>Usuarios</h1>
+      <p>La funcionalidad de usuarios es para la gestión de administradores, vendedores y clientes.</p>
+      <p>Cada opcion tiene sus propios parámetros y si no se especifican correctamente se provocará un error general.</p>
+      <h5>Funcionalidades disponibles</h5>
+      <div class="row">
+        <div class="col-8">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Parámetros</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>usuarios</td>
+                <td></td>
+                <td>Ver lista de usuarios</td>
+              </tr>
+              <tr>
+                <td>login</td>
+                <td>username, password</td>
+                <td>Validar usuario y contraseña</td>
+              </tr>
+              <tr>
+                <td>usuario_baja</td>
+                <td>id</td>
+                <td>Deshabilitar usuario</td>
+              </tr>
+              <tr>
+                <td>usuario_alta</td>
+                <td>id</td>
+                <td>Habilitar usuario</td>
+              </tr>
+              <tr>
+                <td>update_usuario</td>
+                <td>nombre, email, cargo, id</td>
+                <td>Actualizar datos del usuario</td>
+              </tr> 
+              <tr>
+                <td>update_password</td>
+                <td>password, id</td>
+                <td>Actualizar contraseña del usuario</td>
+              </tr>
+              <tr>
+                <td>create_usuario</td>
+                <td>username, password, nombre, email, cargo</td>
+                <td>Crear nuevo usuario, si no existe el username</td>
+              </tr>
+              <tr>
+                <td>cargos</td>
+                <td></td>
+                <td>Lista de cargos disponibles para asignar</td>
+              </tr>             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+      <h1>Productos</h1>
+      <p>La funcionalidad de productos es para la gestión de los mismos.</p>
+      <p>Cada opcion tiene sus propios parámetros y si no se especifican correctamente se provocará un error general.</p>
+      <h5>Funcionalidades disponibles</h5>
+      <div class="row">
+        <div class="col-8">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Parámetros</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>productos</td>
+                <td></td>
+                <td>Ver lista de productos</td>
+              </tr>
+              <tr>
+                <td>productos_categoria</td>
+                <td>cat</td>
+                <td>Ver lista de productos por categoria</td>
+              </tr>
+              <tr>
+                <td>producto_baja</td>
+                <td>id</td>
+                <td>Deshabilitar producto</td>
+              </tr>
+              <tr>
+                <td>producto_alta</td>
+                <td>id</td>
+                <td>Habilitar producto</td>
+              </tr>
+              <tr>
+                <td>update_producto</td>
+                <td>nombre, desc, precio, img, id</td>
+                <td>Actualizar datos del producto</td>
+              </tr>
+              <tr>
+                <td>reduce_inventario</td>
+                <td>cantidad,id</td>
+                <td>Reducir cantidad especificada del inventario al producto</td>
+              </tr>
+              <tr>
+                <td>aumenta_inventario</td>
+                <td>cantidad,id</td>
+                <td>Aumentar cantidad especificada del inventario al producto</td>
+              </tr>
+              <tr>
+                <td>change_categoria</td>
+                <td>cat,id</td>
+                <td>Cambiar la categoria del producto</td>
+              </tr>
+              <tr>
+                <td>create_producto</td>
+                <td>sku, nombre, desc, precio,inv, img , cat</td>
+                <td>Crear producto</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="section3" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+      <h1>Categorias</h1>
+      <p>La funcionalidad de categorias de productos necesarias para crear productos.</p>
+      <p>Cada opcion tiene sus propios parámetros y si no se especifican correctamente se provocará un error general.</p>
+      <h5>Funcionalidades disponibles</h5>
+      <div class="row">
+        <div class="col-8">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Parámetros</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>categorias</td>
+                <td></td>
+                <td>Ver lista de categorias</td>
+              </tr>
+              <tr>
+                <td>categorias_activas</td>
+                <td></td>
+                <td>Ver lista de categorias activas</td>
+              </tr>
+              <tr>
+                <td>categoria_baja</td>
+                <td>id</td>
+                <td>Deshabilitar categoria</td>
+              </tr>
+              <tr>
+                <td>categoria_alta</td>
+                <td>id</td>
+                <td>Habilitar categoria</td>
+              </tr>
+              <tr>
+                <td>update_categoria</td>
+                <td>nombre, img, id</td>
+                <td>Actualizar datos de la categoria</td>
+              </tr>
+              <tr>
+                <td>create_categoria</td>
+                <td>nombre, img</td>
+                <td>Crear categoria</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="section4" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+      <h1>Chats</h1>
+      <p>La funcionalidad de respuestas a palabras comunes de los usuarios.</p>
+      <p>Cada opcion tiene sus propios parámetros y si no se especifican correctamente se provocará un error general.</p>
+      <h5>Funcionalidades disponibles</h5>
+      <div class="row">
+        <div class="col-8">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Parámetros</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>chats</td>
+                <td></td>
+                <td>Ver lista de palabras y respuestas</td>
+              </tr>
+              <tr>
+                <td>buscar_palabra</td>
+                <td>palabras</td>
+                <td>Encontrar la primer respuesta por cada palabra de la oración</td>
+              </tr>
+              <tr>
+                <td>update_chat</td>
+                <td>palabra,respuesta,id</td>
+                <td>Actualizar la palabra y respuesta</td>
+              </tr>
+              <tr>
+                <td>change_respuesta</td>
+                <td>respuesta,id</td>
+                <td>Actualizar la respuesta</td>
+              </tr>
+              <tr>
+                <td>create_chat</td>
+                <td>palabra,respuesta</td>
+                <td>Crear palabra y respuesta</td>
+              </tr>              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="section5" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+      <h1>Checkout</h1>
+      <p>La funcionalidad de Checkout de la tienda.</p>
+      <p>Cada opcion tiene sus propios parámetros y si no se especifican correctamente se provocará un error general.</p>
+      <h5>Funcionalidades disponibles</h5>
+      <div class="row">
+        <div class="col-8">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Parámetros</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>pedidos</td>
+                <td></td>
+                <td>Ver lista de pedidos</td>
+              </tr>
+              <tr>
+                <td>tipos_pago</td>
+                <td></td>
+                <td>Ver tipos de pago para obtener el id</td>
+              </tr>
+              <tr>
+                <td>create_checkout</td>
+                <td>cliente, direccion,tipo_pago,digitos,cvv,fecha,titular</td>
+                <td>Registrar el pedido del cliente.</td>
+              </tr>              
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+      <h5>Considerar lo siguiente:</h5>
+      <ul>
+        <li>
+          El parámetro cliente es el id de usuario.
+        </li>
+        <li>
+          tipo_pago es el id del tipo de pago seleccionado.
+        </li>
+        <li>
+          Si se elige tipo_pago = 2 entonces enviar los datos de la tarjeta:
+          <ul>
+            <li>
+              digitos: 16 números exactos de la tarjeta. 
+            </li>
+            <li>
+              cvv: 3 números exactos.
+            </li>
+            <li>
+              fecha: vencimiento de la tarjeta en formato "MM/AAAA" (12/2023).
+            </li>
+            <li>
+              titular: nombre del tarjetahabiente.
+            </li>
+            <li>
+              Solo se permiten tarjetas Visa y Master Card (4 o 5).
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+  </div> -->
+</body>
+
+</html>

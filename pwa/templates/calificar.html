@@ -1,0 +1,146 @@
+<ion-view hide-nav-bar="true">
+  <ion-content class="">
+    <style>
+      @media only screen and (min-height: 800px) {
+        .Bajar {
+          margin-top: 10% !important;
+        }
+      }
+
+      .PlantillaBase45 {
+        min-height: 100vh;
+        background: #0084BF 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
+
+      .centro {
+        text-align: center;
+      }
+
+      .Letras47 {
+        color: #fff;
+        font-size: 23px;
+        font-weight: bold;
+      }
+
+      .btnSiguiente {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+        border-radius: 10px;
+        padding: 3%;
+      }
+
+      .Letras48 {
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .Bajar {
+        margin-top: 0%;
+      }
+
+      .TextArea {
+        width: 100%;
+        border-radius: 15px;
+        padding: 2%;
+      }
+
+      .Letras50 {
+        color: #fff;
+        font-size: 15px;
+      }
+
+      .staryellow{
+        font-size: 2em; 
+        color: #F2CF24;
+      }
+
+      .stargray{
+        font-size: 2em; 
+        color: #8A8A8A;
+      }
+
+      .staryellow i:before {
+        content: "\2605" !important;
+        font-size: 44pt;
+      }
+
+      .stargray i:before {
+        content: "\2605" !important;
+        font-size: 44pt;
+      }
+      .colorfondoazul{
+        background: #0C375A 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
+      .Letraclasificar{
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 0px;
+        color: #262626;
+        opacity: 1; 
+      }
+    </style>
+    <div class="PlantillaBase45">
+      <div class="colorfondoazul">
+        <div class="centro" style="padding-top: 15%;padding-bottom: 10px;">
+          <img src="./img/logo.png" style="width: 30%;">
+        </div>
+      </div>
+      <div style="padding: 10%;">
+        <div style="padding: 10% 10% 1% 10%;text-align: center;">
+        <span class="Letras47">Califica el Proveedor</span>
+      </div>
+
+      <div style="padding: 5% 10%; text-align: center;">
+        <span class="Letras48">{{datosperfil.nombre}} {{datosperfil.apellido}}</span>
+      </div>
+
+      <div class="centro" >
+        <img src="{{img}}{{datosperfil.foto}}" style="width: 70%;border-radius: 10%;">
+        <!-- <img src="./img/stars.png" style="width: 70%;"> -->
+        <div class="row" >
+          <div class="col-10" style="text-align: center; margin-right: 10%;">
+            <span ng-click="touchstar(1)" class="{{star1}}"> 
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <div class="col-10" style="text-align: center; margin-right: 10%;">
+            <span ng-click="touchstar(2)" class="{{star2}}">
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <div class="col-10" style="text-align: center; margin-right: 10%;">
+            <span ng-click="touchstar(3)" class="{{star3}}">
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <div class="col-10" style="text-align: center; margin-right: 10%;">
+            <span ng-click="touchstar(4)" class="{{star4}}">
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <div class="col-10" style="text-align: center; margin-right: 10%;">
+            <span ng-click="touchstar(5)" class="{{star5}}">
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 2%;">
+        <div style="padding-bottom: 1%">
+          <span class="Letras50">Comentarios</span>
+        </div>
+        <textarea ng-model="comentarios" class="TextArea" rows="4" cols="50" id="comentario"></textarea>
+      </div>
+
+      <div style="padding-top: 12%;" class="Bajar">
+        <div ng-click="calificar()" class="centro btnSiguiente">
+          <span class="Letraclasificar">Enviar Calificación</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

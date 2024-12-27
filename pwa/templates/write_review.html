@@ -1,0 +1,102 @@
+<ion-view view-title="Add Card">
+    <ion-content class="padding">
+    <style>
+      .Titulo{
+        font-size: 35px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .FlechaIzquierda{
+        margin-left: 5%;
+        margin-top: 5%;
+        padding-top: 5%;
+      }
+
+      .profilebox{
+        margin-bottom: 10%;
+        padding-top: 10px;
+        padding-bottom: 3px;
+        padding-left: 7%;
+        margin-left: -10%;
+        margin-right: -10%;
+        width: 120%;
+        height: auto;
+        background-color: white;    
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(207, 207, 207, 0.6);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(204, 204, 204, 0.6);
+        box-shadow: 0px 0px 15px 0px rgba(201, 201, 201, 0.6);
+        }
+
+        .review_rating{
+            font-size: 18px;
+            color: rgb(255, 208, 0);
+        }
+        .review_rating2{
+              font-size: 18px;
+              color: rgb(173, 173, 173);
+            }
+        #review_space{
+            margin-top: 5%;
+            margin-bottom: 20%;
+            background-color: rgb(0,0,0,0);
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .btnSave {
+          margin-top: 30px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        height: 50px;
+        line-height: 50px;
+        color: #FFFFFF;
+        font-family: Verdana, Geneva, sans-serif;
+        width: 60%;
+        height: auto;
+        font-size: 18px;
+        font-weight: 100;
+        background-color: #000000;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+       }
+
+    </style>
+    <div>
+        <div class="FlechaIzquierda">
+          <span class="Titulo">
+            <i   onclick="location.href='#/tab/settings'" class="fas fa-arrow-left"></i>
+          </span>
+        </div>
+        <div style="text-align: center;">
+            <h3>Reviews</h3>
+        </div>
+        <div style="padding-left: 5%; margin-top: 10%;">
+            <div style="text-align: left;">
+                <h4>Grape Lime Ricky</h4>
+            </div>
+            <div style="text-align: left;">
+                <i class="fas fa-star review_rating"></i>
+                <i class="fas fa-star review_rating"></i>
+                <i class="fas fa-star review_rating"></i>
+                <i class="fas fa-star review_rating"></i>
+                <i class="fas fa-star review_rating2"></i>
+            </div>
+            <div>
+                <input type="Text" id="review_space" placeholder="Type a review...  250 Characters...">
+            </div>
+            <div style="text-align: center; margin-top: -10%">
+                <a href="" class="btnSave">Post Review</a>
+            </div>
+        </div>
+
+
+      </div>
+    </ion-content>
+  </ion-view>

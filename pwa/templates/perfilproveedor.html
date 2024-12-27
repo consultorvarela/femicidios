@@ -1,0 +1,203 @@
+<ion-view view-title="Home">
+  <ion-content class="padding">
+    <style>
+      .Xcerrar{
+        text-align: left;
+        font-size: 21px;
+        letter-spacing: 0px;
+        color: #222222;
+        opacity: 1;
+        font-weight: bold;
+      }
+    </style>
+  <div>
+    <div style="padding: 4%">
+      <div ng-click="cerrar()" class="Xcerrar">X</div>
+    </div>
+    <!-- <div class="row Sombras" style="padding: 5% 5% 2% 5%!important">
+      <div class="col Izquierda">
+        <img src="./img/logo2.png" style="width: 50%;">
+      </div>
+      <div class="col Derechas">
+        <img onclick="location.href='#/option'" src="./img/menu.png" style="width: 15%;">
+      </div>
+    </div> -->
+    <div>
+      <img src="./img/banner2.png" style="width: 100%">
+    </div>
+    <div>
+      <div class="Contenedorprov">
+        <div ng-if="datosperfil.verificado_jobbox == 1" class="Colorgrisclaro">
+          <img src="./img/check.png" style="width: 4%;"> Usuario Verificado por <img src="./img/logo2.png" style="width: 13%">
+        </div>
+          <div class="row" style="padding-left: 0%!important;">
+            <div class="col-60">
+              <div class="LetrasNombre">
+                {{datosperfil.nombre}} {{datosperfil.apellido}}
+              </div>
+              <div class="LetrasProfesion">
+                {{datosperfil.titulo}}
+              </div>
+              <div class="LetraCertificadopor">
+                Certificado por {{datosperfil.instit_certifica1}}
+              </div>
+              <div style="margin-left: 10%;">
+                <div>
+                <div class="row" style="padding-left: 0%">
+                  <div class="col-5" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95">
+                    <div class="LetrasCertificados">
+                      {{datosperfil.especialidad1}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(datosperfil.especialidad2 != '')">
+                <div class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{datosperfil.especialidad2}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(datosperfil.especialidad3 != '')">
+                <div class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{datosperfil.especialidad3}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-40 Centro" style="margin-left: 10%;">
+              <div ng-if = "verificado == 1" style="margin-top: -20%">
+              </div>
+              <div> 
+                <img src="{{urlfoto}}{{datosperfil.foto}}" style="width: 50%;border-radius: 50px;"> 
+              </div>
+              <div class="Centro">
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrellas5"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrellas4"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrellas3"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrellas2"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrellas1"></i>
+              </div>
+              <div class="Centro LetrasCalificacion" style="margin-left: 10%;">
+                {{datosperfil.estrellas}} Valoraciones
+              </div>
+              <div>
+                <!-- <label class="toggle">
+                   <input ng-click="activar()" type="checkbox" id="idactivo">
+                   <div class="track">
+                     <div class="handle"></div>
+                   </div>
+                </label> -->
+              </div>
+            </div>
+          </div>
+          <div style="padding-right: 26%;">
+            <div class="row">
+              <div ng-if="showWa == '1'" class="col-20">
+                <div>
+                  <img ng-click="irw(datosperfil.whatsapp)" src="./img/wa.png" style="width: 70%">
+                </div>
+              </div>
+              <div class="col-20">
+                <div>
+                  <a href="tel:+504{{datosperfil.celular}}"><img ng-click="ir(datosperfil.celular)" src="./img/tf.png" style="width: 70%"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-if="datosperfil != 0" style="padding-left: 2%;padding-right: 2%;padding-bottom: 7%">
+          <div class="ContenedorSolicitud">
+            <div class="MuroUsu" style="padding: 4%;text-align: center;">
+              {{datosperfil.propuesta}}
+            </div>
+          </div>
+        </div>
+        <div ng-if="datos != 0" style="padding-left: 2%;padding-right: 2%;padding-bottom: 2%">
+          <div class="ContenedorMuro">
+            <div> 
+              <div class="LetraOcionMuro">
+                Opiniones
+              </div>
+            </div>
+            <div>
+              <div class="row" style="padding-left: 0%; padding: 0%">
+                <div class="col" style="padding: 0%">
+                  <div>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="e1"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="e2"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="e3"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="e4"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="e5"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="LetrasCalificacion" style="margin-left: -40%;margin-top: -3%;">
+                    {{datosperfil.estrellas}} Valoraciones
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div ng-repeat="d in datos">
+              <div>
+                <div class="LetraNombreUs">
+                  {{d.nombre}} {{d.apellido}}
+                </div>
+              </div>
+              <div style="padding: 1%;">
+                <div class="MuroUsu">
+                  {{d.comentario}}
+                </div>
+              </div>
+              <div>
+                <div class="row" style="padding-left: 0%; padding: 0%">
+                  <div class="col" style="padding: 0%">
+                    <div class="LetraFecha">
+                      {{d.fecha}}
+                    </div>
+                  </div>
+                  {{colorestrellas(d.estrellas)}}
+                  <div class="col"> 
+                    <div class="Derechas">
+                      <i class="fas fa-star" style="color: {{estrella5}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella4}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella3}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella2}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella1}};"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="LineaDivisoria">
+                  
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+    </div>
+  </div>                 
+  </ion-content>
+  </ion-view>

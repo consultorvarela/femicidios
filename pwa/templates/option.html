@@ -1,0 +1,102 @@
+<ion-view hide-nav-bar="true">
+<ion-content class="">
+<style>
+    @media only screen and (max-height: 600px) {
+        .baja1{
+            padding-top: 12%!important;
+        }
+        .baja2{
+            padding-top: 18%!important;
+        }
+    }
+    @media only screen and (min-height: 800px) {
+        .baja1{
+            padding-top: 10%!important;
+        }
+        .baja2{
+            padding-top: 70%!important;
+        }
+    }
+    .ColorBase{
+        min-height: 100vh;
+        background-color: #EFEFEF;
+    }
+    .X{
+        color: #000;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .LetraGris{
+        color: #9C9C9C;
+        font-size: 15px;
+    }
+    .banner{
+        color:#0C375A;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .baja1{
+        padding-top: 20%;
+    }
+    .baja2{
+        padding-top: 25%;
+    }
+</style>
+<div class="ColorBase">
+  <div style="text-align: right;padding: 5%;">
+    <img src="./img/logo2.png" style="width: 20%">
+    <span onclick="location.href='#/tab/home'" class="X">&nbsp;&nbsp;&nbsp;&nbsp;X</span>
+  </div>
+  <div>
+    <div class="baja1">
+    </div><hr>
+  </div>
+  <div onclick="location.href='#/planes'" style="padding: 3%;">
+      <span class="LetraGris">
+        Regístrate como Proveedor
+      </span>
+  </div><hr>
+  <div style="padding: 3%;">
+    <span class="LetraGris">
+        Servicio al Cliente
+    </span>
+</div><hr>
+<div style="padding: 3%;">
+    <span class="LetraGris">
+        Política de Privacidad
+    </span>
+</div><hr>
+<div style="padding: 3%;">
+    <span class="LetraGris">
+        Sobre Nosotros
+    </span>
+</div><hr>
+<div ng-click="Cerra_Sesion()" style="padding: 3%;">
+    <span class="LetraGris">
+        Cerrar Sesión
+    </span>
+</div><hr>
+<div>
+    <div class="baja2" style="text-align: center;">
+        <span class="banner">www.jobbox.com</span>
+    </div>
+</div>
+<div>
+    <div class="row" style="text-align: center;padding-top: 10%;">
+        <div class="col">
+            <img src="./img/facebook.png" style="width: 50%">
+        </div>
+        <div class="col">
+            <img src="./img/whatsapp.png" style="width: 50%">
+        </div>
+        <div class="col">
+            <img src="./img/twitter.png" style="width: 50%">
+        </div>
+        <div class="col">
+            <img src="./img/instagram.png" style="width: 50%">
+        </div>
+    </div>
+</div>
+</div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,343 @@
+<ion-view view-title="Home">
+  <ion-content class="padding">
+  <style>
+    @media only screen and (max-height:  600px) {
+      .Casifinaliza{
+        font-size: 11px!important;
+      }
+      .LetrasPequeTitu{
+        font-size: 12px;
+      }
+      .LetrasFinal{
+        font-size: -12px;
+      }
+      .Titulo5 {
+        font-size: 20px!important;
+      }
+      .PrecioGran {
+        font-size: 35px!important;
+      }
+      .LetrasBanner {
+        font-size: 15px!important;
+      }
+      .LetraPlan2 {
+          font-size: 20px!important;
+      }
+      .LetraOK {
+          font-size: 10px!important;
+      }
+      .LetraPlan2 {
+          font-size: 15px!important;
+      }
+    }
+    @media only screen and (min-height:  800px) {
+      .BajarFinal{
+        padding-top: 15%!important;
+      }
+    }
+    .padding {
+      padding: 0px!important;
+    }
+    .Centro{
+      text-align: center;
+    }
+    .Izquierda{
+      text-align: left;
+    }
+    .Derechas{
+      text-align: right;
+    }
+    .Sombras{
+      -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    }
+    .DivSemicuAzul{
+      top: 0px;
+      left: 8px;
+      width: 100%;
+      height: 213px;
+      background: #0C375A 0% 0% no-repeat padding-box;
+      border-radius: 0px 0px 40px 40px;
+      opacity: 1;
+    }
+    .EspaciosLaterales{
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .Cerrar{
+      text-align: left;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Titulo5{
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+      line-height: 1;
+    }
+    .LetrasJobbox{
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Cuadrosscroll{
+      top: 177px;
+      left: 37px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #0000004D;
+      border: 2px solid #707070;
+      border-radius: 23px;
+      opacity: 1;
+      width: 95%;
+    }
+    .LetraPlan{
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+    }
+    .LetraPlan2{
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .PrecioGran{
+      text-align: center;
+      font-size: 50px;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .PrecioPeque{
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .LetrasBanner{
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .btnOK{
+      background: #0C375A 0% 0% no-repeat padding-box;
+      border-radius: 8px;
+      opacity: 1;
+    }
+    .LetraOK{
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Ajustar{
+      padding-top: 6%;
+    }
+    .btnAjustar{
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 6%;
+    }
+    .InputPeque{
+      border-radius: 20px;
+      padding-left: 7%!important;
+      border: 1px solid #9C9C9C!important;
+      height: 4vh!important;
+      width: 90%!important;
+      font-size: 10px!important;
+    }
+    .Casifinaliza{
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .LetrasPequeTitu{
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .LetrasFinal{
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+    }
+    .BajarFinal{
+      padding-top: 0%;
+    }
+  </style>
+  <div class="EspaciosLaterales" style="z-index: 1;">
+    <div class="DivSemicuAzul">
+      <div class="row" style="padding-top: 5%;">
+        <div class="col Izquierda">
+          <span onclick="location.href='#/tab/home'" class="Cerrar">X</span>
+        </div>
+        <div class="col Derechas">
+          <img src="./img/logo.png" style="width: 50%;">
+        </div>
+      </div>
+      <div class="Centro" style="padding: 0% 5% 0% 5%">
+        <p class="Titulo5">Empieza Hoy<br> Tu Perfil de Proveedor</p>
+      </div>
+      <div class="Centro">
+        <span class="LetrasJobbox">Cada perfil goza de TODOS los beneficios de <img src="./img/logo.png" style="width: 13%;"></span>
+      </div>
+    </div>
+    <div>
+      <ion-slide-box slider="data.slider" style="margin-top: -19%;margin-left: 3%;">
+        <ion-slide>
+          <div style="padding: 0% 5% 10% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Basico</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">1 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask.png" style="width: 30%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 449<span class="PrecioPeque">.95</span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner">Unico pago por Suscripción<br> por 3 meses</span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan1()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Ok!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div style="padding: 0% 5% 10% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Personal</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">1 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask.png" style="width: 30%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 449<span class="PrecioPeque">.95</span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner">Unico pago por Suscripción<br> por 6 meses</span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan1()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Ok!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div style="padding: 0% 5% 0% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Duo</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">2 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask2.png" style="width: 54%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 475<span class="PrecioPeque">.95</span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner">Unico pago por Suscripción<br> por 6 meses</span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan2()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Super!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div style="padding: 0% 5% 0% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Empresa</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">3 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask3.png" style="width: 60%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 499<span class="PrecioPeque">.95</span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner">Unico pago por Suscripción<br> por 6 meses</span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan3()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Super si!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slide-box> 
+      <div class="BajarFinal">
+        <span class="Casifinaliza">¿Tienes un Código Promocional?</span>
+        <div class="row" style="margin-top: -3%;">
+          <div class="col-60" style="padding-top: 2%;">
+            <input type="text" placeholder="Introdúcelo Aquí" class="InputPeque" id="codigo">
+          </div>
+          <div class="col-40">
+            <div ng-click="usarcpon()" class="btncupon">
+              Usar Código
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Centro">
+        <span class="LetrasPequeTitu">¿Que obtienes por estar suscrito a Jobbox?</span>
+      </div>
+      <div class="Centro">
+        <p class="LetrasFinal">Todos los días, Jobbox llega a miles de personas, y
+           todos los días miles de personas necesitan de servicios,
+            de esta manera, al estar tu en Jobbox, estas llegando a 
+            miles de posibles clientes día a día.</p>
+      </div>
+    </div>
+  </div>                       
+  </ion-content>
+  </ion-view>

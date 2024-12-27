@@ -1,0 +1,134 @@
+<ion-view view-title="Home">
+<ion-content class="padding" ng-init="load()">
+<style>
+  @media only screen and (min-height:  800px) {
+    .IphoneX{
+      padding-top: 8%!important;
+    }
+  }
+  .padding {
+    padding: 0px!important;
+  }
+  .Centro{
+    text-align: center;
+  }
+  .Izquierda{
+    text-align: left;
+  }
+  .Derechas{
+    text-align: right;
+  }
+  .Sombras{
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+  }
+  .Triboton{
+    border: 1px solid #707070;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .bordeDerecho{
+    border-radius: 0px 200px 200px 0px;
+    -moz-border-radius: 0px 200px 200px 0px;
+    -webkit-border-radius: 0px 200px 200px 0px;
+  }
+  .bordeIzquierda{
+    border-radius: 200px 0px 0px 200px;
+    -moz-border-radius: 200px 0px 0px 200px;
+    -webkit-border-radius: 200px 0px 0px 200px;
+  }
+  .Letrasbtnredondos{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #9C9C9C;
+    opacity: 1;
+  }
+
+
+</style>
+<div>
+  <div class="row Sombras" style="padding: 5% 5% 2% 5%!important;padding: 0px;padding-left: 0%;padding-right: 0%;">
+    <div class="col Izquierda">
+      <img src="./img/logo2.png" style="width: 50%;">
+    </div>
+    <div class="col Derechas">
+      <img onclick="location.href='#/option'" src="./img/menu.png" style="width: 15%;">
+    </div>
+  </div>
+  <div style="padding: 10% 10% 7% 10%">
+    <div class="row" style="padding: 0px;padding-left: 0%;padding-right: 0%;">
+      <div ng-click="tod()" class="col Centro Triboton bordeIzquierda" style="{{colorTodo}}">
+        <span class="Letrasbtnredondos">Todas</span>
+      </div>
+      <div ng-click="plat()" class="col Centro Triboton" style="{{colorPlataforma}}">
+        <span class="Letrasbtnredondos">Plataformas</span>
+      </div>
+      <div ng-click="App()" class="col Centro Triboton bordeDerecho" style="{{colorApp}}">
+        <span class="Letrasbtnredondos">Apps</span>
+      </div>
+    </div>
+  </div>
+  <div ng-if="noti == 0">
+    <div ng-repeat="p in plataforma" style="padding: 3% 10% 0% 10%">
+      <div class="btnNotification">
+        <div class="row" style="padding: 0px;padding-left: 0%;padding-right: 0%;">
+          <div class="col">
+            <span class="TituloNoti">{{p.titulo}}</span>
+          </div>
+          <div class="col-20 Derechas">
+            <span class="TituloNoti">{{p.Hora}}</span>
+          </div>
+        </div>
+        <div class="SeparacionTit">
+          <p class="TextoNoti">
+            {{p.mensaje}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div ng-if="noti == 1">
+    <div ng-repeat="a in app" style="padding: 3% 10% 0% 10%">
+      <div class="btnNotification">
+        <div class="row" style="padding: 0px;padding-left: 0%;padding-right: 0%;">
+          <div class="col">
+            <span class="TituloNoti">{{a.titulo}}</span>
+          </div>
+          <div class="col-20 Derechas">
+            <span class="TituloNoti">{{a.Hora}}</span>
+          </div>
+        </div>
+        <div class="SeparacionTit">
+          <p class="TextoNoti">
+            {{a.mensaje}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div ng-if="noti == 2">
+    <div ng-repeat="t in todo" style="padding: 3% 10% 0% 10%">
+      <div class="btnNotification">
+        <div class="row" style="padding: 0px;padding-left: 0%;padding-right: 0%;">
+          <div class="col">
+            <span class="TituloNoti">{{t.titulo}}</span>
+          </div>
+          <div class="col-20 Derechas">
+            <span class="TituloNoti">{{t.Hora}}</span>
+          </div>
+        </div>
+        <div class="SeparacionTit">
+          <p class="TextoNoti">
+            {{t.mensaje}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                       
+</ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch PHP Server",
+            "type": "php",
+            "request": "launch",
+            "runtimeExecutable": "php",
+            "runtimeArgs": [
+                "-S", "localhost:8007",
+                "-S", "127.0.0.1:8007",
+                "-t", "/Users/pedrovarela/desarrollo/cemh/indicadores"
+            ],
+            "program": "/Users/pedrovarela/desarrollo/cemh/indicadores/index.php",
+            "port": 8007,
+            "env": {
+                "XDEBUG_MODE": "debug,develop"
+            }
+        }
+    ]
+}

@@ -1,0 +1,710 @@
+@media only screen and (max-width: 375px) {
+  .LetrasSolicitud {
+    font-size: 10px!important;
+  }
+}
+@media only screen and (max-height:  600px) {
+      .Casifinaliza{
+        font-size: 11px!important;
+      }
+      .LetrasPequeTitu{
+        font-size: 12px;
+      }
+      .LetrasFinal{
+        font-size: -12px; 
+      }
+      .Titulo5 {
+        font-size: 20px!important;
+      }
+      .PrecioGran {
+        font-size: 35px!important;
+      }
+      .LetrasBanner {
+        font-size: 15px!important;
+      }
+      .LetraPlan2 {
+          font-size: 20px!important;
+      }
+      .LetraOK {
+          font-size: 10px!important;
+      }
+      .LetraPlan2 {
+          font-size: 15px!important;
+      }
+      .LetrasCertificados {
+          font-size: 11px!important;
+      }
+      .LetrasSolicitud {
+          font-size: 9px!important;
+      }
+    }
+    @media only screen and (min-height:  800px) {
+      .BajarFinal{
+        padding-top: 15%!important;
+      }
+    }
+    .padding {
+      padding: 0px!important;
+    }
+    .Centro{
+      text-align: center;
+    }
+    .Izquierda{
+      text-align: left;
+    }
+    .Derechas{
+      text-align: right;
+    }
+    .Sombras{
+      -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    }
+    .DivSemicuAzul{
+      top: 0px;
+      left: 8px;
+      width: 100%;
+      height: 213px;
+      background: #0C375A 0% 0% no-repeat padding-box;
+      border-radius: 0px 0px 40px 40px;
+      opacity: 1;
+    }
+    .EspaciosLaterales{
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .Cerrar{
+      text-align: left;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Titulo5{
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+      line-height: 1;
+    }
+    .LetrasJobbox{
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Cuadrosscroll{
+      top: 177px;
+      left: 37px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #0000004D;
+      border: 2px solid #707070;
+      border-radius: 23px;
+      opacity: 1;
+      width: 95%;
+    }
+    .LetraPlan{
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+    }
+    .LetraPlan2{
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .PrecioGran{
+      text-align: center;
+      font-size: 50px;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .PrecioPeque{
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .LetrasBanner{
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .btnOK{
+      background: #0C375A 0% 0% no-repeat padding-box;
+      border-radius: 8px;
+      opacity: 1;
+    }
+    .LetraOK{
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Ajustar{
+      padding-top: 6%;
+    }
+    .btnAjustar{
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 6%;
+    }
+    .InputPeque{
+      border-radius: 20px;
+      padding-left: 7%!important;
+      border: 1px solid #9C9C9C!important;
+      height: 4vh!important;
+      width: 90%!important;
+      font-size: 10px!important;
+    }
+    .Casifinaliza{
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .LetrasPequeTitu{
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .LetrasFinal{
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+    }
+    .BajarFinal{
+      padding-top: 0%;
+    }
+
+    .Contenedorprov{
+      border: 1px solid #096983;
+      border-radius: 10px;
+      padding: 3%;
+      height: 100%;
+      margin: 0% 2% 7% 2%;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 2px solid #707070;
+      border-radius: 18px;
+      opacity: 1;
+    }
+    .Colorgrisclaro{
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+    }
+    .LetrasNombre{
+      text-align: left;
+      font-size: 15px;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .LetrasProfesion{
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #096983;
+      opacity: 1;
+    }
+    .LetraCertificadopor{
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+      font-style: italic;
+    }
+    .PuntodeSeparacion{
+      top: 413px;
+      left: 56px;
+      width: 5px;
+      height: 5px;
+      background: #707070 0% 0% no-repeat padding-box;
+      border: 1px solid #707070;
+      opacity: 1;
+      border-radius: 100%;
+    }
+    .LetrasCertificados{
+      text-align: left;
+      font-size:  12px;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .Separaciontopo2{
+      margin-top: -8%;
+    }
+    .LetrasCalificacion{
+      text-align: left;
+      font-size: 10px;
+      font-style: italic;
+      letter-spacing: 0px;
+      color: #5C5C5C;
+      opacity: 1;
+    }
+    .ContenedorSolicitud{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 2px solid #707070;
+      border-radius: 18px;
+      opacity: 1;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    .btnSolicitud{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #0C375A;
+      border-radius: 10px;
+      opacity: 1;
+      padding: 8%;
+    }
+    .LetrasSolicitud{
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+    }
+    .ContenedorMuro{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 2px solid #707070;
+      border-radius: 18px;
+      opacity: 1;
+      padding: 5%;
+    }
+    .ContenedorMuro2{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 2px solid #707070;
+      border-radius: 18px;
+      opacity: 1;
+      padding: 5%;
+    }
+    .LetraOcionMuro{
+      text-align: left;
+      font-size: 15px;
+      letter-spacing: 0px;
+      color: #5C5C5C;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .LetraNombreUs{
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 0px;
+      color: #5C5C5C;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .MuroUsu{
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+    .LetraFecha{
+      opacity: 1;
+      font-size: 12px;
+      font-style: italic;
+      color: #9C9C9C;
+      text-decoration-line: underline;
+    }
+    .LineaDivisoria{
+      border: 1px solid #707070;
+      opacity: 1;
+    }
+    .btncupon{
+      background-color: #fff;
+      border-radius: 200px;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5%;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+      background-color: #0C375A;
+      color: #fff;
+      font-size: 12px;
+    }
+
+
+    .btnNotification{
+    border: 1px solid #707070;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+    .TituloNoti{
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #5C5C5C;
+      opacity: 1;
+    }
+    .TextoNoti{
+      line-height: 1;
+      text-align: left;
+      font-size: 11px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+    }
+    .SeparacionTit{
+      margin-top: -2%;
+    }
+
+#verde {
+    width: 20%;
+    height: auto;
+  }
+.padding{
+    background: rgb(222,222,222);
+    background: linear-gradient(0deg, rgb(238, 238, 238) 0%, rgb(255, 255, 255) 40%);
+}
+.dash1{
+    padding-left: 5%;
+
+}
+#dsh1{
+    padding-top: 40%;
+}
+
+#quantity{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.log1 {
+    padding-top: 30%;
+    padding-left: 5%;
+}
+#phonenumlabel{
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0px;
+    word-spacing: -1.6px;
+    color: #43FF3B;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+#phonecont{
+   padding-left: 5%;
+   padding-right: 5%;
+}
+#phoneInput{
+    text-align: center;
+    width: 100%;
+}
+
+.row {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
+
+#vercol2{
+    padding-top: 8px;
+    font-size: 25px;
+    text-align: end;
+}
+
+#txtpin{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    word-spacing: -1.6px;
+    color: #43FF3B;
+    font-weight: 400;
+    text-decoration: none;
+    font-variant: normal;
+    text-transform: none;
+}
+.pinInput{
+    padding-left: 5%;
+    padding-bottom: 25px;
+}
+
+.colL, .colR{
+    width: 15%;
+}
+.colR{
+    padding-left: 5%;
+}
+.colL{
+    padding-right: 5%;
+}
+
+#verde3 {
+    width: 200%;
+    height: auto;
+}
+
+#verde2 {
+    width: 100%;
+    height: auto;
+}
+.card{
+    text-align: center;
+    background-color: white;
+}
+#imgcard{
+    width: 50%;
+    height: auto;
+}
+.product_card{
+    margin-top: 10%;
+    text-align: center; 
+}
+#imgProduct{
+    width: 40%;
+    height: auto;
+}
+
+.productDescription {
+    margin-left: 15%;
+    border-radius: 25px;
+    background:rgb(255,255,255);
+    border: 0.1px solid #dcedf8;
+    padding: 20px; 
+    width: 70%;
+    height: auto;   
+}
+
+#productTitle, #productPrice {
+    text-align: left;
+}
+#productDetails{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #dddddd ;
+    border-top-left-radius:25px ;
+    border-top-right-radius: 25px;
+}
+
+.btnAdd {
+	box-shadow: 0px 0px 0px 2px #ffffff;
+	background:linear-gradient(to bottom, #404040 5%, #000000 100%);
+	background-color:#404040;
+	border-radius:10px;
+	border:1px solid #6b6b6b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:8px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #282a30;
+}
+.btnAdd:hover {
+	background:linear-gradient(to bottom, #000000 5%, #404040 100%);
+	background-color:#000000;
+}
+.btnAdd:active {
+	position:relative;
+	top:1px;
+}
+
+#perfil{
+    margin-bottom: 20px;
+}
+
+#profileL {
+   text-align: left; 
+}
+#profileR{
+    text-align: right;
+}
+
+.titleSettings{
+    margin-top: 1%;
+    margin-bottom: 4%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    word-spacing: -0.2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+
+  .imgcard2{
+    max-width: 100%;
+    height: 60px;
+  }
+
+  #profilepic{
+      float: right;
+      width: 30%;
+      padding-left: 10px;
+      border-radius: 45px;
+  }
+  #username{
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  }
+
+
+
+  .btnOrder {
+      margin-top: 7%;
+      margin-left: 3%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 8%;
+    width: 90%;
+    background-color: #2C2C2C;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btnOrder:hover {
+    background: #858585;
+    border: solid #FFFFFF 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+ }
+
+ .pProducto{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    word-spacing: -0.2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+ }
+
+ .pPrecio{
+     color: #858585;
+ }
+
+ .spam{
+    color: #AAAAAA;
+ }
+
+ #username {
+     padding-top: 5%;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    word-spacing: -0.4px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+ }
+
+ #settingsIcons{
+     margin-top: 25%;
+     margin-bottom: auto;
+ }
+
+ .wrapper{
+     display: flex;
+
+     overflow-x: auto;
+ }
+
+ .wrapper::-webkit-scrollbar{
+     width: 0;
+ }
+
+ .wrapper .item{
+     margin-left: 1%;
+     margin-top: 2%;
+     margin-bottom: 2px;
+     margin-right: 8%;
+     padding-right: 5px;
+     width: 140px;
+     min-width: 140px;
+     height: auto;     
+     text-align: left;
+     border: 1.2px solid  #dddddd;
+     border-radius: 15px;
+     -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+     
+ }
+
+ #imgset{
+     margin-top: 60%;
+    width: 200%;
+    height: auto;
+    max-height: 80px;
+ }
+
+
+ 
+
+ 

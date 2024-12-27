@@ -1,0 +1,271 @@
+<ion-view view-title="Home">
+  <ion-content class="padding">
+  <style>
+    @media only screen and (max-height:  600px) {
+      .positioncajita {
+          margin-top: -40%!important;
+      }
+    }
+    @media only screen and (min-height:  800px) {
+      .positioncajita {
+          margin-top: -15%!important;
+      }
+      .XSD{
+        padding: 10% 5% 0% 5%!important;
+      }
+      .hbubdas{
+        margin-top: 15%!important;
+      }
+    }
+    .padding {
+      padding: 0px!important;
+    }
+    .Centro{
+      text-align: center;
+    }
+    .Izquierda{
+      text-align: left;
+    }
+    .Derechas{
+      text-align: right;
+    }
+    .Sombras{
+      -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    }
+    .DivSemicuAzul{
+      top: 0px;
+      left: 8px;
+      width: 100%;
+      height: 213px;
+      background: #0C375A 0% 0% no-repeat padding-box;
+      border-radius: 0px 0px 40px 40px;
+      opacity: 1;
+    }
+    .EspaciosLaterales{
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .Cerrar{
+      text-align: left;
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .Titulo5{
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+      line-height: 1;
+    }
+    .btnCajita{
+      height: 33px;
+      background: #096983 0% 0% no-repeat padding-box;
+      border: 2px solid #096983;
+      border-radius: 13px;
+      opacity: 1;
+      padding-top: 2%;
+    }
+    .sigcajita{
+      top: 842px;
+      left: 169px;
+      width: 40px;
+      height: 18px;
+      text-align: center;
+      font: normal normal medium 15px/18px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    .XSD{
+      padding: 5% 5% 0% 5%;
+    }
+    .hbubdas{
+      margin-top: 5%;
+    }
+    .perfil1{
+      z-index: 1;
+      position: relative;
+      width: 90%;
+      height: 235px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 1px solid #9C9C9C;
+      opacity: 1;
+      margin-left: 5%;
+      margin-top: -20%;
+      border-radius: 10px;
+      padding: 2%;
+    }
+
+    .perfil2{
+      z-index: 2;
+      position: absolute;
+      position: relative;
+      width: 90%;
+      height: 45px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 1px solid #9C9C9C;
+      opacity: 1;
+      margin-left: 5%;
+      border-radius: 10px;
+      padding: 2%;
+      margin-top: 3%;
+    }
+
+    .perfil3{
+      z-index: 3;
+      position: absolute;
+      position: relative;
+      width: 90%;
+      height: 45px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 1px solid #9C9C9C;
+      opacity: 1;
+      margin-left: 5%;
+      border-radius: 10px;
+      padding: 2%;
+      margin-top: 3%;
+    }
+
+    .perfil1s{
+      font-size: 15px;
+      letter-spacing: 0px;
+      color: #0C375A;
+      opacity: 1;
+      font-weight: bold;
+    }
+    .Input{
+      top: 215px;
+      left: 37px;
+      height: 32px;
+      opacity: 1;
+      padding-left: 2%!important;
+      width: 100%;
+    }
+    .Visibilidad{
+      opacity: 0%;
+      visibility: visible;
+    }
+    .Visibilidad2{
+      opacity: 0%;
+    }
+    .Visibilidad3{
+      opacity: 100%;
+    }
+    .chek{
+      line-height: 1;
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #9C9C9C;
+      opacity: 1;
+    }
+    .chek2{
+      margin-top: 0%;
+      z-index: 4;
+      position: absolute;
+      position: relative;
+    }
+  </style>
+  <div class="EspaciosLaterales" style="z-index: 1;">
+    <div class="DivSemicuAzul">
+      <div class="row" style="padding-top: 5%;">
+        <div class="col Izquierda">
+          <span onclick="location.href='#/tab/user2'" class="Cerrar">X</span>
+        </div>
+        <div class="col Derechas">
+          <img src="./img/logo.png" style="width: 50%;">
+        </div>
+      </div>
+      <div class="Centro XSD">
+        <p class="Titulo5">Llena con Tus Datos</p>
+      </div>
+    </div>
+    <div> 
+      <div class="perfil1">
+        <div class="row">
+          <div class="col-90">
+            <div class="perfil1s">Perfil 1</div>
+          </div>
+          <div class="col-10">
+            <img ng-click="desplegar()" src="./img/abajo.png" style="width: 70%" id="flecha1">
+          </div>
+        </div>
+        <select name="cars" id="p1area" class="Input Visibilidad3" style="width: 100%;border: none;">
+        <option value=""><span style="color: #999;">Area de Competencia</span></option>
+        <option ng-repeat="o in opciones" value="{{o.id}}">{{o.area_competencia}}</option>
+        
+        </select><hr class="Visibilidad3">
+        <input type="text" name="" placeholder="1ra Especialidad" id="p11" class="Input Visibilidad3" maxlength="26"><hr class="Visibilidad3">
+        <input type="text" name="" placeholder="2da Especialidad" id="p12" class="Input Visibilidad3" maxlength="26"><hr class="Visibilidad3">
+        <input type="text" name="" placeholder="3ra Especialidad" id="p13" class="Input Visibilidad3" maxlength="26">
+      </div>
+    </div>
+
+    <div>
+      <div ng-if="plan >= 2" class="perfil2">
+        <div class="row">
+          <div class="col-90">
+            <div class="perfil1s">Perfil 2</div>
+          </div>
+          <div class="col-10">
+            <img ng-click="desplegar2()" src="./img/derecha3.png" style="width: 70%" id="flecha2">
+          </div>
+        </div>
+        <select disabled="disabled" name="cars" id="p2area" class="Input Visibilidad" style="width: 100%;border: none;" disable="true">
+        <option value="-1"><span style="color: #999;">Area de Competencia</span></option>
+        <option ng-repeat="o in opciones" value="{{o.id}}">{{o.area_competencia}}</option>
+        </select><hr class="Visibilidad">
+        <input disabled="disabled" type="text" name="" placeholder="1ra Especialidad" id="p21" class="Input Visibilidad" maxlength="26"><hr class="Visibilidad">
+        <input disabled="disabled" type="text" name="" placeholder="2da Especialidad" id="p22" class="Input Visibilidad" maxlength="26"><hr class="Visibilidad">
+        <input disabled="disabled" type="text" name="" placeholder="3ra Especialidad" id="p23" class="Input Visibilidad" maxlength="26">
+      </div>
+    </div>
+
+    <div>
+      <div ng-if="plan == 3" class="perfil3">
+        <div class="row">
+          <div class="col-90">
+            <div class="perfil1s">Perfil 3</div>
+          </div>
+          <div class="col-10">
+            <img ng-click="desplegar3()" src="./img/derecha3.png" style="width: 70%" id="flecha3">
+          </div>
+        </div>
+        <select disabled="disabled" name="cars" id="p3area" class="Input Visibilidad2" style="width: 100%;border: none;" disable="true">
+        <option value="-1"><span style="color: #999;">Area de Competencia</span></option>
+        <option ng-repeat="o in opciones" value="{{o.id}}">{{o.area_competencia}}</option>
+        </select><hr class="Visibilidad2">
+        <input disabled="disabled" type="text" name="" placeholder="1ra Especialidad" id="p31" class="Input Visibilidad2" maxlength="26"><hr class="Visibilidad2" disable="true">
+        <input disabled="disabled" type="text" name="" placeholder="2da Especialidad" id="p32" class="Input Visibilidad2" maxlength="26"><hr class="Visibilidad2">
+        <input disabled="disabled" type="text" name="" placeholder="3ra Especialidad" id="p33" class="Input Visibilidad2" maxlength="26">
+      </div>
+    </div>
+    <div style="padding: 5% 5% 0% 5%;">
+        <p class="chek">Selecciona una categoría que describa tu área de trabajo y en las especialidades anota el área de especialización.</p><br>
+    </div>
+    <div class="chek2">
+      <div class="row">
+          <div class="col-10" style="text-align: center;">
+            <input type="checkbox" id="terminos">
+          </div>
+          <div class="col-90">
+            <p for="vehicle1" class="chek">Acepto los términos, condiciones y política de privacidad de Jobbox.</p><br>
+          </div>
+      </div>
+    </div>
+    <div class="Centro" style="padding: 0% 10% 10% 10%;">
+      <div ng-click="agregarperfil()" class="btnCajita">
+        <span class="sigcajita" style="height: 54px;">Soy mayor de edad y acepto <br> los términos y condiciones</span>
+      </div>
+    </div>
+  </div>                       
+  </ion-content>
+  </ion-view>

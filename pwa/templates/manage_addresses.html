@@ -1,0 +1,130 @@
+<ion-view view-title="Add Card">
+    <ion-content class="padding">
+              <style>
+      .Titulo{
+        font-size: 35px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .TituloFlecha{
+        font-size: 20px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 1.6;
+      }
+      
+      .FlechaIzquierda{
+        margin-left: 5%;
+        margin-top: 5%;
+        padding-top: 5%;
+      }
+
+      .manage{
+
+              margin-top: 10%;
+              padding-top: 10px;
+              padding-bottom: 3px;
+              padding-left: 7%;
+              margin-left: -10%;
+              margin-right: -10%;
+              width: 120%;
+              height: auto;
+              background-color: white;    
+              border-radius: 5px;
+              -webkit-box-shadow: 0px 0px 15px 0px rgba(156, 156, 156, 0.6);
+              -moz-box-shadow: 0px 0px 15px 0px rgba(139, 139, 139, 0.6);
+              box-shadow: 0px 0px 15px 0px rgba(134, 134, 134, 0.6);
+            }
+
+        .btnmng {
+            margin-top: 3px;
+            padding: 5%;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border: 0.7px solid black;
+            border-radius: 3px;
+            color: #363636;
+            font-family: Open Sans;
+            width: 90%;
+            height: 80%;
+            font-size: 12px;
+            font-weight: 550;
+            background-color: #d8d8d8;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+       }
+
+       .btnmngadd {
+        margin-top: 12%;
+        color: #41895c;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 550;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: underline solid #41895c;
+        font-style: italic;
+       }
+
+       #txtmngadd{
+           margin-top: -2%;
+       }
+
+    </style>
+    <div>
+        <div class="FlechaIzquierda">
+          <span class="TituloFlecha">
+            <i   onclick="location.href='#/tab/user_profile'" class="fas fa-arrow-left"></i>
+          </span>
+        </div>
+        <div style="padding-left: 5%; padding-right: 5%;">
+          <h1 class="Titulo">Manage Address</h1>
+          <div class="manage">
+              <h5 style="margin-bottom: 5%;">John Smith</h5>
+              <p id="txtmngadd">3 Front Street</p>
+              <p id="txtmngadd">Phoenix, AZ 85021</p>
+              <p id="txtmngadd">United States</p>
+              <p id="txtmngadd">Phone Number: (888) 888-88888</p>
+              <div class="row">
+                <div class="col" style="text-align: left;">
+                    <a onclick="location.href='#/tab/edit_address'" class="btnmng" style="margin-left: -15%;">Edit</a>
+                </div>
+                <div class="col" style="text-align: left;">
+                    <a class="btnmng" style="margin-left: 8%;">Delete</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="manage">
+            <h5 style="margin-bottom: 5%;">John Smith</h5>
+            <p id="txtmngadd">3 Front Street</p>
+            <p id="txtmngadd">Phoenix, AZ 85021</p>
+            <p id="txtmngadd">United States</p>
+            <p id="txtmngadd">Phone Number: (888) 888-88888</p>
+            <div class="row">
+              <div class="col" style="text-align: left;">
+                  <a onclick="location.href='#/tab/edit_address'" class="btnmng" style="margin-left: -15%;">Edit</a>
+              </div>
+              <div class="col" style="text-align: left;">
+                  <a class="btnmng" style="margin-left: 8%;">Delete</a>
+              </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a onclick="location.href='#/tab/add_address'" class="btnmngadd" >Add Address</a>
+        </div>
+
+        <div>
+
+        </div>
+           
+        </div>
+      </div>
+    </ion-content>
+  </ion-view>

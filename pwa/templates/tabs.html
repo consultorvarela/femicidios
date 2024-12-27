@@ -1,0 +1,93 @@
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+  
+  <style>
+    .Acomo{
+      padding-top: 3%;
+    }
+  </style>
+  <ion-tab icon-off="fas fa-home" icon-on="fas fa-home" ng-click="gotohome()"  class="Acomo">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab icon-off="fas fa-search" icon-on="fas fa-search"  ng-click="gotosearch()" class="Acomo">
+    <ion-nav-view name="tab-search"></ion-nav-view>
+  </ion-tab>
+  
+  <ion-tab  icon-off="far fa-user" icon-on="far fa-user" ng-click="gotouser2()"  class="Acomo">
+    <ion-nav-view name="tab-user2"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab  icon-off="far fa-bell" icon-on="far fa-bell" ng-click="gotobell()" class="Acomo">
+    <ion-nav-view name="tab-bell"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
+
+<style>
+
+  .showprof{
+    width: 50%;
+    height: 100px;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    top: 80vh;
+    margin-left: 129px;
+    border-radius: 10px;
+  }
+  .Letras{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #096983;
+    opacity: 1;
+  }
+  .Espacios{
+    padding: 1% 0% 1% 0%;
+  }
+</style>
+
+
+
+<ion-content class="showprof" style="display:none">
+  <div ng-click="perx(1)"> 
+    <div class="row" style="padding: 4% 0% 0% 0%">
+      <div class="col-20" style="text-align: center;">
+        <img src="./img/mask.png" style="width: 50%;">
+      </div>
+      <div class="col-80">
+        <div class="Letras">
+          {{profesion1}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 0%;">
+  <div ng-if="plan > 1" ng-click="perx(2)">
+    <div class="row" style="padding: 3% 0% 0% 0%">
+      <div class="col-20" style="text-align: center;">
+        <img src="./img/mask.png" style="width: 50%;">
+      </div>
+      <div class="col-80">
+        <div class="Letras">
+          {{profesion2}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 0%;">
+  <div ng-if="plan > 2" ng-click="perx(3)">
+    <div class="row" style="padding: 3% 0% 0% 0%">
+      <div class="col-20" style="text-align: center;">
+        <img src="./img/mask.png" style="width: 50%;">
+      </div>
+      <div class="col-80">
+        <div class="Letras">
+          {{profesion3}}
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+

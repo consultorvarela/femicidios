@@ -1,0 +1,263 @@
+<ion-view view-title="Favorites">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          margin-bottom: 10%;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgba(0,0,0,0);
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: #C0D6E4;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .active {
+            color:#5ef192;
+            border-bottom: 5px solid #5ef192;
+        }
+        .card, .list-inset {
+            overflow: hidden;
+            margin: 20px 10px;
+            border-radius: 10px!important;
+            background-color: #fff;
+        }
+        .Sombras{
+                -webkit-box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.11);
+                -moz-box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.11);
+                box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.11);
+            }
+            .ColorTexto{
+                color: #5ef192!important;
+            }
+            .ColorTexto2{
+              color:rgb(224, 224, 224);
+              text-shadow: 0 0 3px rgb(117, 117, 117);
+            }
+            .ColorTexto3{
+              color:rgb(185, 185, 185);
+              text-decoration: line-through solid rgb(185, 185, 185);
+              font-size: 12px;
+              margin-left: 2px;
+              margin-bottom: 2px;
+            }
+            .ColorTexto4{
+              color:rgb(165, 165, 165);
+              font-size: 10px;
+              margin-left: -4.04%;
+            }
+            .bajo{
+              padding-top: 20%;
+            }
+            .alto{
+              margin-top: -10%;
+            }
+            .Corazon{
+              position: absolute;
+              margin-top: 16%;
+              margin-left: 74%;
+              font-size: 25px;
+              z-index: 999;
+            }
+            .Corazon2{
+              position: absolute;
+              margin-top: -3%;
+              margin-left: 74%;
+              font-size: 25px;
+              z-index: 999;
+            }
+            .Corazon3{
+              position: absolute;
+              margin-top: -3%;
+              margin-left: 74%;
+              font-size: 25px;
+              z-index:999;
+            }
+            .Estrella{
+              margin-left: 32%;
+              font-size: 18px;
+              color: rgb(255, 208, 0);
+            }
+        </style>
+    <ion-content class="padding">
+            <div class="bar bar-header item-input-inset">
+                <div class="colL">
+                    <img src="img/green.png" id="verde2">
+                </div>
+                <label class="item-input-wrapper">
+                  <i class="icon ion-ios-search placeholder-icon"></i>
+                  <input type="search" placeholder="What are you looking for...">
+                </label>
+                <div class="colR">
+                    <img src="img/shop.png" id="verde2">
+                </div>
+              </div>
+              <div>
+                <ul>
+                    <li><a class="active" href="">Products</a></li>
+                    <li><a href="#/tab/dispensary">Dispensaries</a></li>
+
+                  </ul>
+              </div>
+              <div style="background-color: #f0f2f5;margin-left: -3%; margin-right: -3%;">
+                <div class="row" style="margin-top: -10%;">
+                <div class="col" style="position: relative;" onclick="location.href='#/tab/product_detail'">
+                  <div>
+                    <i class="ion-heart ColorTexto Corazon"></i>
+                  </div>
+                    <div class="card Sombras bajo">
+                        <div class="item item-text-wrap">
+                          <div>
+                            <img src="img/imagen.png" id="imgcard" style="width: 124%;">
+                          </div>
+                          <div style="text-align: left;">
+                            <div>
+                            <h3>Grape Lime Ricky</h3>
+                          </div>
+                          <div>
+                             <a class="ColorTexto">42$</a>
+                             <a class="ColorTexto3">46$</a>
+                             <i class="ion-star Estrella"></i>
+                             <a class="ColorTexto4">4.7</a>
+                          </div>
+
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col"  style="position: relative;">
+                  <div>
+                    <i class="ion-heart ColorTexto Corazon"></i>
+                </div>
+                    <div class="card Sombras">
+                        <div class="item item-text-wrap">
+                          <div>
+                            <img src="img/choco.jpg" id="imgcard" >
+                          </div>
+                          <div style="text-align: left;">
+                            <div>
+                            <h3>Chocolate</h3>
+                          </div>
+                          <div>
+                              <a class="ColorTexto">$40</a>
+                              <a class="ColorTexto3">46$</a>
+                              <i class="ion-star Estrella"></i>
+                             <a class="ColorTexto4">4.7</a>
+                          </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: -10%;">
+                <div class="col" style="position: relative;">
+                  <div>
+                    <i class="ion-heart ColorTexto Corazon"></i>
+                  </div>
+                    <div class="card Sombras">
+                        <div class="item item-text-wrap">
+                          <div>
+                            <img src="img/candies.jpg" id="imgcard">
+                          </div>
+                          <div style="text-align: left;">
+                            <div>
+                            <h3>Candies</h3>
+                          </div>
+                          <div>
+                              <a class="ColorTexto">$40</a>
+                              <a class="ColorTexto3">46$</a>
+                              <i class="ion-star Estrella"></i>
+                             <a class="ColorTexto4">4.7</a>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col" style="position: relative;">
+                  <div>
+                    <i class="ion-heart ColorTexto Corazon3"></i>
+                  </div>
+                    <div class="card Sombras bajo alto">
+                        <div class="item item-text-wrap">
+                          <div>
+                            <img src="img/bears.jpg" id="imgcard">
+                          </div>
+                          <div style="text-align: left;">
+                            <div>
+                            <h3>Gummy Bears</h3>
+                          </div>
+                          <div>
+                              <a class="ColorTexto">$40</a>
+                              <a class="ColorTexto3">46$</a>
+                              <i class="ion-star Estrella"></i>
+                             <a class="ColorTexto4">4.7</a>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: -10%;">
+                <div class="col" style="position: relative;">
+                  <div>
+                    <i class="ion-heart ColorTexto Corazon"></i>
+                  </div>
+                    <div class="card Sombras">
+                        <div class="item item-text-wrap">
+                          <div>
+                            <img src="img/choco.jpg" id="imgcard">
+                          </div>
+                          <div style="text-align: left;">
+                            <div>
+                            <h3>Chocolate</h3>
+                          </div>
+                          <div>
+                              <a class="ColorTexto">$40</a>
+                              <a class="ColorTexto3">46$</a>
+                              <i class="ion-star Estrella"></i>
+                             <a class="ColorTexto4">4.7</a>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col" style="position: relative;">
+                  <div>
+                    <i class="ion-heart ColorTexto Corazon2"></i>
+                  </div>
+                    <div class="card Sombras bajo alto">
+                        <div class="item item-text-wrap">
+                          <div>
+                            <img src="img/imagen.png" id="imgcard" style="width: 126%;">
+                          </div>
+                          <div style="text-align: left;">
+                            <div>
+                            <h3>Grape Lime Ricky</h3>
+                          </div>
+                          <div>
+                              <a class="ColorTexto">$40</a>
+                              <a class="ColorTexto3">46$</a>
+                              <i class="ion-star Estrella"></i>
+                             <a class="ColorTexto4">4.7</a>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+             
+              </div>
+                         
+    </ion-content>
+  </ion-view>

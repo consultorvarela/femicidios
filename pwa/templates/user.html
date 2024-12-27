@@ -1,0 +1,127 @@
+<ion-view view-title="User">
+    <ion-content class="padding">
+    	<style>
+    		.PlantillaBase{
+    			min-height: 100vh;
+    			background-image: url('./img/fondo_user.png');
+    			background-size: cover;
+    		}
+    		.padding {
+			    padding: 0px!important;
+			}
+			.Titulo{
+				font-weight: bold;
+				color: #fff;
+			}
+			.positiontitulo{
+				padding-top: 25%;
+    			padding-left: 3%;
+			}
+			.panel{
+				border-radius: 10px;
+				background-color: #fff;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 20%;
+				padding-top: 20%;
+				padding-left: 5%;
+				padding-right: 5%;
+				text-align: center;
+			}
+			.Sombras{
+                -webkit-box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.2);
+                -moz-box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.2);
+                box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.2);
+            }
+            .imgposition{
+            	width: 30%;
+            	position: absolute;
+            	margin-left: 35%;
+            }
+            .atras{
+            	border-radius: 10px;
+            	border: 1px solid #b0b2b6!important;
+            	padding-top: 4%;
+            	padding-bottom: 3%;
+            }
+            .flecha{
+            	color:#545559;
+            	font-size: 150%;
+            }
+            .btnazul{
+            	background-color: #3a5eff;
+            	border-radius: 10px;
+            	text-align: center;
+            	padding-top: 6%;
+			    padding-bottom: 5%;
+			    margin-left: 5%;
+            }
+            .letrabtn{
+            	color: #fff;
+            	font-size: 150%;
+            	font-weight: bold;
+            }
+			.iconus2{
+				margin-top: 10px;
+				font-size: 100%;
+				color: #707070;
+        	}
+    	</style>
+    	<div class="PlantillaBase">
+    		<div class="positiontitulo">
+    			<h1 class="Titulo">Profile</h1>
+    		</div>
+    			<img src="./img/giga.png" class="imgposition">
+    		<div class="Sombras panel">
+    			<h4>John Smith</h4>
+                <p id="udettxt">nick@mail.com</p>
+                <hr>
+    			<div class="row">
+					<div class="col-10" style="padding-top: 3%;">
+						<i class="fas fa-user-edit iconus2"></i>
+					</div>
+					<div class="col">
+						<h4 style="margin-left: 3%;">Name</h4>
+					</div>
+					<div class="col-10" style="padding-top: 4%;">
+						<i class="fas fa-chevron-right iconus2" ></i>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="col-10" style="padding-top: 3%;">
+						<i class="fas fa-mobile-alt iconus2"></i>
+					</div>
+					<div class="col">
+						<h4 style="margin-left: 3%;">Phone Number</h4>
+					</div>
+					<div class="col-10" style="padding-top: 4%;">
+						<i class="fas fa-chevron-right" iconus2></i>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="col-10" style="padding-top: 3%;">
+						<i class="far fa-envelope iconus2"></i>
+					</div>
+					<div class="col">
+						<h4 style="margin-left: 3%;">Email Address</h4>
+					</div>
+					<div class="col-10" style="padding-top: 4%;">
+						<i class="fas fa-chevron-right" iconus2></i>
+					</div>
+				  </div>
+    		</div>
+    		<div style="padding-top: 5%;">
+    			<div class="row">
+    				<div onclick="location.href='#/tab/user_profile'" class="col-25 atras" style="text-align: center;">
+    					<i class="fas fa-arrow-left flecha"></i>
+    				</div>
+    				<div class="col-75">
+    					<div class="btnazul">
+    						<span class="letrabtn">Save</span>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </ion-content>
+  </ion-view>

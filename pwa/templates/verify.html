@@ -1,0 +1,61 @@
+<ion-view view-title="Verify">
+  <ion-content class="padding">
+    <style>
+      .Titulo{
+        font-size: 35px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .Titulo2{
+        font-size: 25px;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .CuadradoVerde{
+        background-color: #5ef192;
+        margin-right: 85%;
+        margin-left: 5%;
+        margin-top: 65%;
+        padding-top: 5%;
+      }
+      .FlechaIzquierda{
+        margin-left: 5%;
+        margin-top: 5%;
+        padding-top: 5%;
+      }
+      .ColorTexto{
+        color: #5ef192;
+      }
+      hr {
+        background-color: #5ef192;
+      }
+      .Letra{
+        font-size: 15px;
+        color: #000;
+      }
+    </style>
+    <div>
+        <div class="FlechaIzquierda">
+          <span class="Titulo">
+            <i class="fas fa-arrow-left"></i>
+          </span>
+        </div>
+        <div style="padding-left: 5%;padding-bottom: 70%; padding-right: 5%;">
+          <span class="Titulo">Verify Pin</span>
+          <label>
+            <span class="input-label ColorTexto">Pin</span>
+            <input type="number" id="quantity" placeholder="Verification Pin">
+            <hr>
+            <div style="padding-top: 2%;">
+              <a href="" class="Letra">Resend Pin</a>
+            </div>
+          </label>
+          <br>
+              <button class="button button-positive" style="background-color: #5ef192">
+                Accept
+              </button>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

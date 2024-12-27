@@ -1,0 +1,138 @@
+<ion-view view-title="Home">
+<ion-content class="padding" ng-init="load()">
+<style>
+  @media only screen and (min-height:  800px) {
+    .IphoneX{
+      padding-top: 8%!important;
+    }
+  }
+  .padding {
+    padding: 0px!important;
+  }
+  .Centro{
+    text-align: center;
+  }
+  .Izquierda{
+    text-align: left;
+  }
+  .Derechas{
+    text-align: right;
+  }
+  .Sombras{
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+  }
+  .wrapper {
+    display: flex;
+    overflow-x: auto;
+  }
+  .Contenedor{
+    border: 1px solid #096983;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 0% 2% 7% 2%;
+  }
+  .LetrasContenedor{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #9C9C9C;
+    opacity: 1;
+  }
+.Proveedor{
+  line-height: 0;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #5C5C5C;
+  opacity: 1;
+}
+.SubProv{
+  line-height: 0;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #9C9C9C;
+  opacity: 1;
+}
+.Cafe{
+  background: #707070 0% 0% no-repeat padding-box;
+  border-radius: 3px 0px 0px 3px;
+  opacity: 1;
+  text-align: center;
+}
+.LetrasBlancas{
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.IphoneX{
+  padding-top: 0%;
+}
+p {
+    margin: 0px 0 0px!important;
+}
+</style>
+<div>
+  <div class="row Sombras" style="padding: 5% 5% 2% 5%!important;padding: 0px;padding-left: 0%;padding-right: 0%;">
+    <div class="col Izquierda">
+      <img src="./img/logo2.png" style="width: 50%;">
+    </div>
+    <div class="col Derechas">
+      <img onclick="location.href='#/option'" src="./img/menu.png" style="width: 15%;">
+    </div>
+  </div>
+  <div class="Centro" style="padding-top: 3%;">
+    <img src="./img/banner.png" style="width: 100%">
+  </div>
+  <div class="IphoneX">
+    <ion-slide-box slider="data.slider">
+      <ion-slide>
+        <div class="Contenedor"> 
+          <p class="LetrasContenedor">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Vestibulum pulvinar lacus ut
+              scelerisque accumsan. Nullam leo urna, lobortis
+              ut rutrum eu, facilisis at sapien. Nam malesuada
+              at enim nec faucibus. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada
+          </p>
+        </div>
+      </ion-slide>
+      <ion-slide ng-repeat="d in destacados">
+        <div class="Contenedor">
+          <div class="row" style="padding: 0px;padding-left: 0%;padding-right: 0%;">
+            <div class="col-20">
+              <img src="{{img}}{{d.foto}}" style="width: 100%;">
+            </div>
+            <div class="col-40" style="padding-left: 5%;padding-top: 3%;">
+              <span class="Proveedor">{{d.nombre}} {{d.apellido}} <i ng-if="d.verificado_jobbox == 1" class="fas fa-check-circle"></i><br><span class="SubProv">{{d.titulo}}</span></span>
+            </div>
+            <div class="col-40 Derechas">
+              <div class="Cafe">
+                <span class="LetrasBlancas">Destacado</span>
+              </div>
+            </div>
+          </div>
+          {{colorestrella(d.estrellas)}}
+          <div style="text-align: right;margin-top: -6%;">
+            <i class="fas fa-star" style="color: {{estrella5}}" ></i>
+            <i class="fas fa-star" style="color: {{estrella4}}" ></i>
+            <i class="fas fa-star" style="color: {{estrella3}}" ></i>
+            <i class="fas fa-star" style="color: {{estrella2}}" ></i>
+            <i class="fas fa-star" style="color: {{estrella1}}" ></i>
+          </div>
+          <p class="LetrasContenedor">{{d.propuesta}}
+          </p>
+        </div>
+      </ion-slide>
+    </ion-slide-box> 
+  </div>
+  <div class="Centro IphoneX">
+    <img src="./img/banner2.png" style="width: 100%;">
+  </div>
+</div>                       
+</ion-content>
+</ion-view>

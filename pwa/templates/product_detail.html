@@ -1,0 +1,207 @@
+<ion-view view-title="">
+    <ion-content class="padding">
+        <style>
+            #productDetails {
+                margin-left: -3%!important;
+                margin-right: -3%!important;
+            }
+            #productDetails {
+                margin-top: 15px;
+                margin-bottom: 35px;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                background-color: #f7f9fc!important;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+            .productDescription {
+                margin-left: 15%;
+                border-radius: 25px;
+                background: rgb(255,255,255);
+                border: 0px solid #dcedf8 !important;
+                padding: 20px;
+                width: 70%;
+                height: auto;
+            }
+            .Sombras{
+                -webkit-box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.2);
+                -moz-box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.2);
+                box-shadow: 0px 17px 29px 0px rgba(0,0,0,0.2);
+            }
+            .ColorTexto{
+                color: #5ef192!important;
+            }
+            .Letra{
+                font-size: 20px;
+
+            }
+            .ColorTextoD{
+                color: #cab4be;
+            }
+            .btnAdd {
+                box-shadow: 0px 0px 0px 2px #ffffff;
+                background: linear-gradient(to bottom, #404040 5%, #000000 100%);
+                background-color: #404040;
+                border-radius: 10px;
+                border: 1px solid #6b6b6b;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: Arial;
+                font-size: 13px!important;
+                padding: 13px 50px!important;
+                text-decoration: none;
+                text-shadow: 0px 1px 0px #282a30;
+            }
+            .DivCorazon{
+                text-align: center;
+                border-radius: 10px;
+                padding-top: 10%;
+                padding-bottom: 3%;
+            }
+            .row {
+                padding: 0px!important;
+            }
+            .icono{
+                font-size: 200%;
+            }
+
+            .title_review{
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+            }
+
+            .txt_review2{
+                font-weight: bold;
+                color: #ffffff;
+            }
+
+            .mapreviews2{
+                padding-top: 5%;
+                padding-bottom: 5px;
+                padding-right: 3.75%;
+                padding-left: 3.75%;
+                margin-top: 5% ;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                height: auto;
+                min-height: 150px;
+                background-color: rgb(0, 0, 0);
+                border-radius: 3px;
+                -webkit-box-shadow: 0px 0px 15px 0px rgba(220,220,220,0.6);
+                -moz-box-shadow: 0px 0px 15px 0px rgba(220,220,220,0.6);
+                box-shadow: 0px 0px 15px 0px rgba(220,220,220,0.6);
+            }
+
+            .Estrella2{
+              float: right;
+              font-size: 18px;
+              color: rgb(255, 208, 0);
+            }
+
+            #select_product{
+                border-radius: 4px;
+            }
+
+            #productprice{
+                color: black;
+                font-weight: 900;
+            }
+            </style>
+        <div>
+            <i ng-click="goBack()" class="fas fa-arrow-left icono" style="font-size: 20px;"></i>
+        </div>
+        <div class="product_card">
+            <img src="img/imagen.png" id="imgProduct" style="width: 60%;">
+        </div>
+        <div id="productDetails">
+            <div class="productDescription Sombras">
+                <div class="row">
+                    <div class="col-80">
+                        <div>
+                            <h4 id="productTitle">Grape Lime Ricky</h4>
+                        </div>
+                    </div>
+                    <div class="col-20" style="text-align: right;padding-top: 5%;">
+                        <i class="fas fa-share-alt ColorTextoD"></i>
+                    </div>
+                </div>
+                <div>
+                    <select id="select_product">
+                        <option value="1 gram | $10.25 / g">1 gram | $10.25 / g</option>
+                        <option value="2 gram | $20.50 / g">2 gram | $20.50 / g</option>
+                      </select>
+                </div>
+                <div style="margin-top: 5%;">
+                    <h5 id="productPrice">Quantity <span  style="font-size: 20px;padding: 11px;" >-</span> 1 <span style="font-size: 20px;padding: 11px;">+</span> 
+                    </h5>
+                </div>
+            </div>
+            <div style="padding-left: 3%;">
+                <h5 style="padding-top: 7%;">DETAILS</h5>
+            <p class="ColorTextoD">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed sollicitudin quam. Praesent sed mattis est, vitae viverra est. Integer imperdiet metus nisi, in elementum nunc mattis a.
+            </p>
+            </div>
+            <div class="row" style="padding-top: 5%;">
+                <div class="col-20">
+                    <div class="Sombras DivCorazon">
+                        <i class="ion-heart ColorTexto" style="font-size: 35px;"></i>
+                    </div>
+                </div>
+                <div class="col-80" style="text-align: right;"> 
+                    <a class="btnAdd">ADD TO MY CART</a>
+                </div>
+              </div>
+              
+              <div style="text-align: center; margin-top: 10%;">
+                <span class="title_review">Reviews</span>
+              </div>
+              <div class="mapreviews2">
+                <span class="txt_review2" style="font-size: 15px;">Grape Lime Ricky</span>
+                <div class="row">
+                    <div class="col">
+                        <p class="txt_review2" style="font-size: 12px; margin-left: -5%;">Andrew Zam | NJ</p>
+                    </div>
+                    <div class="col">
+                        <p class="txt_review">
+                            <i class="ion-star Estrella2"></i>
+                            <i class="ion-star Estrella2"></i>
+                            <i class="ion-star Estrella2"></i>
+                            <i class="ion-star Estrella2"></i>
+                        </p>
+                    </div> 
+                  </div>
+                  <div>
+                    <p class="txt_review2" style="font-size: 12px;">This product was fantastic. It got my girl
+                        and me super high. We had just a fantastic
+                        time. I highly recommend this product to</p>
+                  </div>
+              </div>
+
+              <div class="mapreviews2">
+                <span class="txt_review2" style="font-size: 15px;">Grape Lime Ricky</span>
+                <div class="row">
+                    <div class="col">
+                        <p class="txt_review2" style="font-size: 12px; margin-left: -5%;">Nick Calabasas | LA</p>
+                    </div>
+                    <div class="col">
+                        <p class="txt_review2">
+                            <i class="ion-star Estrella2"></i>
+                            <i class="ion-star Estrella2"></i>
+                        </p>
+                    </div> 
+                  </div>
+                  <div>
+                    <p class="txt_review2" style="font-size: 12px;">This product is super strong. I highly don’t
+                        recommend this sh##. Actually, I only
+                        recommend it if you’re a avid stoner.</p>
+                  </div>
+              
+
+        </div>      
+    </ion-content>
+  </ion-view>

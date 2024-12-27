@@ -1,0 +1,235 @@
+<ion-view view-title="Home">
+<ion-content class="padding">
+<style>
+  @media only screen and (max-height:  600px) {
+    .LetrasNombreProv{
+      font-size: 10px!important;
+    }
+    .ProfesionBusc {
+        font-size: 9px!important;
+        margin-top: -15%!important;
+    }
+    .Letrasdestacado{
+      font-size: 10px!important;
+    }
+    .tamanioestrellas{
+      font-size: 10px!important;
+    }
+  }
+  @media only screen and (min-height:  800px) {
+    .IphoneX{
+      padding-top: 8%!important;
+    }
+  }
+  .padding {
+    padding: 0px!important;
+  }
+  .Centro{
+    text-align: center; 
+  }
+  .Izquierda{
+    text-align: left;
+  }
+  .Derechas{
+    text-align: right;
+  }
+  .Sombras{
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+  }
+  .Select{
+    width: 100%;
+    height: 5vh;
+    padding-left: 2%;
+    border-radius: 10px;
+  }
+  .btnForma{
+    background-color: #9C9C9C;
+    border-radius: 200px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .Sombra2{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  }
+  .Letrabuscar{
+    color: #fff;
+    font-size: 12px;
+  }
+  .LetrasSearch{
+    color: #9C9C9C;
+    font-size: 25px;
+  }
+  .CajitasPerfiles{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 14px;
+    opacity: 1;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+  .LetrasNombreProv{
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #5C5C5C;
+    opacity: 1;
+    margin-top: -7%;
+    margin-left: -4%;
+    font-weight: bold;
+  }
+  .DivOnline{
+    top: 263px;
+    left: 101px;
+    width: 6px;
+    height: 6px;
+    background: #38BF33 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 200%;
+  }
+  .positioniphone5{
+    margin-top: -5%;
+  }
+  .ProfesionBusc{
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: #9C9C9C;
+    opacity: 1;
+    padding-left: 13%;
+    margin-top: -5%;
+    line-height: 1.5;
+  }
+  .Grisdiv{
+    background: #707070 0% 0% no-repeat padding-box;
+    border-radius: 3px 0px 0px 3px;
+    opacity: 1;
+    text-align: center;
+    padding-left: 10%;
+    margin-left: 40%;
+    margin-right: -21%;
+  }
+  .Letrasdestacado{
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  .tamanioestrellas{
+    font-size: 13px;
+  }
+</style>
+<div>
+  <div class="row Sombras" style="padding: 5% 5% 2% 5%!important;padding: 0px;padding-left: 0%;padding-right: 0%;">
+    <div class="col Izquierda">
+      <img src="./img/logo2.png" style="width: 50%;">
+    </div>
+    <div class="col Derechas">
+      <img onclick="location.href='#/option'" src="./img/menu.png" style="width: 15%;">
+    </div>
+  </div>
+  <div class="Centro" style="padding: 10% 3% 0% 10%;">
+    <div class="row" style="padding: 0px;padding-left: 0%;padding-right: 0%;">
+      <div class="col-80">
+        <select name="cars" id="ciudad" placeholder="Estoy en..." class="Select">
+          <option value="" disabled selected>Estoy en...</option>
+          <option ng-repeat="c in ciudades" value="{{c.ciudad}}">{{c.ciudad}}</option>
+        </select>
+      </div>
+      <div class="col-20 Izquierda" style="padding-left: 3%;">
+        <img ng-click="buscar_proveedor2()" src="./img/icono.png" style="width: 50%;">
+      </div>
+    </div>
+  </div>
+  <div class="Centro" style="padding: 3% 3% 0% 10%;">
+    <div class="row" style="padding: 0px;padding-left: 0%;padding-right: 0%;">
+      <div class="col-80">
+        <select name="cars" id="area" placeholder="Estoy en..." class="Select">
+          <option value="" disabled selected>Necesito un...</option>
+          <option ng-repeat="a in area_competencia" value="{{a.area_competencia}}">{{a.area_competencia}}</option>
+        </select>
+      </div>
+      <div class="col-20">
+        
+      </div>
+    </div>
+  </div>
+  <div style="padding: 3% 20% 0% 20%;">
+    <div ng-click="buscar_proveedor()" class="Centro Sombra2 btnForma">
+      <span class="Letrabuscar"> 
+        Buscar
+      </span>
+    </div>
+  </div>
+  <div ng-if="proveedor == 0">
+    <div class="Centro" style="padding: 30% 25% 0% 25%;">
+      <img src="./img/buscar.png" style="width: 30%;">
+    </div>
+    <div class="Centro" style="padding-top: 10%">
+      <span class="LetrasSearch">
+        Ingresa los Datos<br> para iniciar tu Busqueda
+      </span>
+    </div>
+  </div>
+  <div ng-if="proveedor == 1" style="padding: 5% 5% 3% 5%;">
+    <div ng-repeat="p in datos" class="CajitasPerfiles">
+      <div ng-click="verperfil(p.id)">
+        <div class="row" style="padding-top: 4%;">
+           <div class="col-20">
+             <img src="{{urlfoto}}{{p.foto}}" style="width: 100%;">
+           </div>
+           <div class="col">
+             <div class="" style="margin-left: -5%;">
+              <div class="row">
+                <div class="col-10">
+                  <div ng-if="p.activo == 1" class="DivOnline"></div>
+                </div>
+                <div class="col-80">
+                  <div class="LetrasNombreProv">
+                    {{p.nombre}} {{p.apellido}}
+                  </div>
+                </div>
+                <div ng-if="p.verificado_jobbox == 1" class="col-10 positioniphone5">
+                  <img src="./img/check.png" style="width: 120%">
+                </div>
+              </div>
+              <div class="ProfesionBusc">
+                {{p.area_competencia}}
+              </div>
+             </div>
+           </div>
+           <div class="col">
+            <div style="padding-bottom: 5%;">
+              {{destacado(p.destacado)}}
+              <div ng-if="ver == '1'" class="Grisdiv">
+               <div class="Letrasdestacado">
+                 Destacado 
+               </div>
+             </div>
+           </div>
+           <div>
+            {{colorestrella(p.estrellas)}}
+              <div class="Centro tamanioestrellas" style="font-size: 10px;">
+                <i class="fas fa-star" style="color: {{estrella5}}" ></i>
+                <i class="fas fa-star" style="color: {{estrella4}}" ></i>
+                <i class="fas fa-star" style="color: {{estrella3}}" ></i>
+                <i class="fas fa-star" style="color: {{estrella2}}" ></i>
+                <i class="fas fa-star" style="color: {{estrella1}}" ></i>
+              </div>
+              <div class="Centro LetrasCalificacion" style="margin-left: 10%;margin-top: -5%;">
+                {{p.estrellas}} Valoraciones 
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                       
+</ion-content>
+</ion-view>

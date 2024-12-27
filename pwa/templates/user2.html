@@ -1,0 +1,474 @@
+<ion-view view-title="Home">
+  <ion-content class="padding" ng-init="load()">
+    <style>
+      .bordeIzquierda {
+          border-radius: 200px 0px 0px 200px;
+          -moz-border-radius: 200px 0px 0px 200px;
+          -webkit-border-radius: 200px 0px 0px 200px;
+      }
+    </style>
+  <div ng-if="ESTADO == '0'" class="EspaciosLaterales" style="z-index: 1;">
+    <div class="DivSemicuAzul">
+      <div class="row" style="padding-top: 5%;">
+        <div class="col Izquierda">
+          <!-- <span onclick="location.href='#/tab/user2'" class="Cerrar">X</span> -->
+        </div>
+        <div class="col Derechas">
+          <img src="./img/logo.png" style="width: 50%;">
+        </div>
+      </div>
+      <div class="Centro" style="padding: 0% 5% 0% 5%">
+        <p class="Titulo5">Empieza Hoy<br> Tu Perfil de Proveedor</p>
+      </div>
+      <div class="Centro">
+        <span class="LetrasJobbox">Cada perfil goza de TODOS los beneficios de <img src="./img/logo.png" style="width: 13%;"></span>
+      </div>
+    </div>
+    <div>
+      <ion-slide-box slider="data.slider" style="margin-top: -19%;margin-left: 3%;">
+        <ion-slide>
+          <div style="padding: 0% 5% 10% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Basico</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">1 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask.png" style="width: 30%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 299<span class="PrecioPeque"></span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner">Suscripción por 3 meses<br>Pago Único </span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan1()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Ok!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div style="padding: 0% 5% 10% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Personal</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">1 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask.png" style="width: 30%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 449<span class="PrecioPeque"></span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner">Suscripción por 6 meses<br>Pago Único </span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan1()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Ok!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div style="padding: 0% 5% 0% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Duo</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">2 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask2.png" style="width: 54%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 475<span class="PrecioPeque"></span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner">Suscripción por 6 meses<br>Pago Único</span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan2()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Super!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div style="padding: 0% 5% 0% 5%;z-index: 2;">
+            <div class="Cuadrosscroll Centro">
+              <div class="Ajustar">
+                <span class="LetraPlan">Plan Empresa</span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetraPlan2">3 Perfil de Servicio</span>
+              </div>
+              <div class="Ajustar">
+                <img src="./img/mask3.png" style="width: 60%;">
+              </div>
+              <div class="Ajustar">
+                <span class="PrecioGran">L. 499<span class="PrecioPeque"></span></span>
+              </div>
+              <div class="Ajustar">
+                <span class="LetrasBanner"> Suscripción por 6 meses<br>Pago Único </span>
+              </div>
+              <div class="Ajustar btnAjustar">
+                <div ng-click="plan3()" class="btnOK" style="padding: 3%">
+                  <span class="LetraOK">¡Super si!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slide-box>  
+      <div class="BajarFinal">
+        <span class="Casifinaliza">¿Tienes un Código Promocional?</span>
+        <div class="row" style="margin-top: -3%;">
+          <div class="col-60" style="padding-top: 2%;">
+            <input type="text" placeholder="Introdúcelo Aquí" class="InputPeque" id="codigo">
+          </div>
+          <div class="col-40">
+            <div ng-click="usarcpon()" class="btncupon">
+              Usar Código
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Centro">
+        <span class="LetrasPequeTitu">¿Que obtienes por estar suscrito a Jobbox?</span>
+      </div>
+      <div class="Centro">
+        <p class="LetrasFinal">Todos los días, Jobbox llega a miles de personas, y
+           todos los días miles de personas necesitan de servicios,
+            de esta manera, al estar tu en Jobbox, estas llegando a 
+            miles de posibles clientes día a día.</p>
+      </div>
+    </div>
+  </div>
+  <div ng-if="ESTADO == '1'">
+    <div class="row Sombras" style="padding: 5% 5% 2% 5%!important">
+      <div class="col Izquierda">
+        <img src="./img/logo2.png" style="width: 50%;">
+      </div>
+      <div class="col Derechas">
+        <img onclick="location.href='#/option'" src="./img/menu.png" style="width: 15%;">
+      </div>
+    </div>
+    <!-- <div ng-if = "plan > 1" style="padding-left: 2%;padding-right: 2%;padding-bottom: 2%;padding-top: 3%;">
+      <div class="ContenedorSolicitud">
+        <div class="row" style="padding-left: 2%;padding-right: 2%;">
+          <div ng-click="per(1)" class="col Centro" style="border-right: 1px solid #707070">
+            <div class="LetrasSolicitud" style="font-weight: bold;font-size: 15px">PERFIL 1</div>
+            <div class="LetrasSolicitud">{{profesion1}}</div>
+          </div>
+          <div ng-click="per(2)" class="col Centro" style="border-right: 1px solid #707070">
+            <div class="LetrasSolicitud" style="font-weight: bold;font-size: 15px">PERFIL 2</div>
+            <div class="LetrasSolicitud">{{profesion2}}</div>
+          </div>
+          <div ng-click="per(3)" ng-if = "plan == 3" class="col Centro">
+            <div class="LetrasSolicitud" style="font-weight: bold;font-size: 15px">PERFIL 3</div>
+            <div class="LetrasSolicitud">{{profesion3}}</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div>
+      <img src="./img/banner2.png" style="width: 100%">
+    </div>
+    <div>
+      <div class="Contenedorprov">
+        <div ng-if="verificado == 1" class="Colorgrisclaro">
+          <img src="./img/check.png" style="width: 4%;"> Usuario Verificado por <img src="./img/logo2.png" style="width: 13%">
+        </div>
+          <div class="row" style="padding-left: 0%!important;">
+            <div class="col-60">
+              <div class="LetrasNombre">
+                {{PROVEEDOR_nombre}} {{PROVEEDOR_apellido}}
+              </div>
+
+              <div ng-if="perf == 1" class="LetrasProfesion">
+                {{profesion1}}
+              </div>
+              <div ng-if="perf == 2" class="LetrasProfesion">
+                {{profesion2}}
+              </div>
+              <div ng-if="perf == 3" class="LetrasProfesion">
+                {{profesion3}}
+              </div>
+
+              <div class="LetraCertificadopor">
+                Certificado por {{PROVEEDOR_certifica1}}
+              </div>
+
+
+
+
+
+              <div ng-if="perf == 1" style="margin-left: 10%;">
+                <div>
+                <div ng-if="PERFIL_p11 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p11}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(PERFIL_p12 != '')">
+                <div ng-if="PERFIL_p12 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p12}} 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(PERFIL_p13 != '')">
+                <div ng-if="PERFIL_p13 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p13}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div ng-if="perf == 2" style="margin-left: 10%;">
+                <div>
+                <div ng-if="PERFIL_p21 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p21}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(PERFIL_p12 != '')">
+                <div ng-if="PERFIL_p22 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p22}} 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(PERFIL_p13 != '')">
+                <div ng-if="PERFIL_p23 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p23}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div ng-if="perf == 3" style="margin-left: 10%;">
+                <div>
+                <div ng-if="PERFIL_p31 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p31}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(PERFIL_p12 != '')">
+                <div ng-if="PERFIL_p32 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p32}} 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-if="(PERFIL_p13 != '')">
+                <div ng-if="PERFIL_p33 != ''" class="row" style="padding-left: 0%">
+                  <div class="col-5 Separaciontopo2" style="padding-top: 4%;padding-right: 1%">
+                    <div class="PuntodeSeparacion"></div>
+                  </div>
+                  <div class="col-95 Separaciontopo2">
+                    <div class="LetrasCertificados">
+                      {{PERFIL_p33}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+            </div>
+            <div class="col-40 Centro" style="margin-left: 10%;">
+              <div ng-if = "verificado == 1" style="margin-top: -20%">
+              </div>
+              <div> 
+                <img ng-click="prueba()" src="{{urlfoto}}{{foto}}" style="width: 50%;">
+              </div>
+              <div class="Centro">
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrella5"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrella4"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrella3"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrella2"></i>
+                <i class="fas fa-star" style="color: #c9c9c9" id="estrella1"></i>
+              </div>
+              <div class="Centro LetrasCalificacion" style="margin-left: 10%;">
+                {{estrella}} Valoraciones
+              </div>
+              <div>
+                <label class="toggle">
+                   <input ng-click="activar()" type="checkbox" id="idactivo">
+                   <div class="track">
+                     <div class="handle"></div>
+                   </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div style="padding-right: 26%;">
+            <div class="row">
+
+              <div ng-if="showWa == '1'" class="col-20">
+                <div>
+                  <img ng-click="irwha()" src="./img/wa.png" style="width: 70%">
+                </div>
+              </div>
+              <div class="col-20">
+                <div>
+                  <a href="tel:+504{{tel}}"><img src="./img/tf.png" style="width: 70%"></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div style="padding-left: 2%;padding-right: 2%;padding-bottom: 7%">
+          <div class="ContenedorSolicitud">
+            <div class="row">
+              <div class="col">
+                <div ng-click="solicitar()" class="btnSolicitud">
+                  <div class="LetrasSolicitud">
+                    Solicitar Reseña
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+               
+              </div>
+              <div class="col">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ng-if="datos != 0" style="padding-left: 2%;padding-right: 2%;padding-bottom: 2%">
+          <div class="ContenedorMuro">
+            <div>
+              <div class="LetraOcionMuro">
+                Opiniones
+              </div>
+            </div>
+            <div>
+              <div class="row" style="padding-left: 0%; padding: 0%">
+                <div class="col" style="padding: 0%">
+                  <div>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="estrell1"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="estrell2"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="estrell3"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="estrell4"></i>
+                    <i class="fas fa-star" style="color: #c9c9c9" id="estrell5"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="LetrasCalificacion" style="margin-left: -40%;margin-top: -3%;">
+                    {{estrella}} Valoraciones
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div ng-repeat="d in datos">
+              <div>
+                <div class="LetraNombreUs">
+                  {{d.nombre}} {{d.apellido}}
+                </div>
+              </div>
+              <div style="padding: 1%;">
+                <div class="MuroUsu">
+                  {{d.comentario}}
+                </div>
+              </div>
+              <div>
+                <div class="row" style="padding-left: 0%; padding: 0%">
+                  <div class="col" style="padding: 0%">
+                    <div class="LetraFecha">
+                      {{d.fecha}}
+                    </div>
+                  </div>
+                  {{colorestrella(d.estrellas)}}
+                  <div class="col"> 
+                    <div class="Derechas">
+                      <i class="fas fa-star" style="color: {{estrella5}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella4}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella3}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella2}};"></i>
+                      <i class="fas fa-star" style="color: {{estrella1}};"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="LineaDivisoria">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+  </div>
+ <!--  <div class="ContenedorMuro2">
+            <div>
+              <div class="LetraOcionMuro">
+                Opiniones
+              </div>
+          </div>
+        </div>  -->                
+  </ion-content>
+
+
+</ion-view>

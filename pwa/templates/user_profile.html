@@ -1,0 +1,119 @@
+<ion-view view-title="Add Card">
+    <ion-content class="padding">
+              <style>
+      .Titulo{
+        font-size: 35px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .TituloFlecha{
+        font-size: 20px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .FlechaIzquierda{
+        margin-left: 5%;
+        margin-top: 5%;
+        padding-top: 5%;
+      }
+
+      .profilebox{
+        margin-bottom: 10%;
+        padding-top: 10px;
+        padding-bottom: 3px;
+        padding-left: 7%;
+        margin-left: -10%;
+        margin-right: -10%;
+        width: 120%;
+        height: auto;
+        background-color: white;    
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(207, 207, 207, 0.6);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(204, 204, 204, 0.6);
+        box-shadow: 0px 0px 15px 0px rgba(201, 201, 201, 0.6);
+        }
+
+        .options{
+        margin-bottom: 10%;
+        padding-top: 10px;
+        padding-bottom: 3px;
+        padding-left: 7%;
+        margin-left: -10%;
+        margin-right: -10%;
+        width: 120%;
+        height: auto;
+        background-color: white;    
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(207, 207, 207, 0.6);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(204, 204, 204, 0.6);
+        box-shadow: 0px 0px 15px 0px rgba(201, 201, 201, 0.6);
+        }
+
+        #user_profilepic{
+            width: 70%;
+            height: auto;
+        }
+        #udettxt{
+            font-size: 12px;
+            margin-top: -5%;
+        }
+
+        .iconus{
+            font-size: 200%;
+            color: #69eb93;
+        }
+
+        .iconus2{
+            font-size: 50   px;
+            color: #000000;
+        }
+    </style>
+    <div>
+        <div class="FlechaIzquierda">
+          <span class="TituloFlecha">
+            <i   onclick="location.href='#/tab/settings'" class="fas fa-arrow-left"></i>
+          </span>
+        </div>
+        <div class="profilebox" onclick="location.href='#/tab/user'">
+            <div class="row">
+                <div class="col-25">
+                    <img src="img/giga.png" id="user_profilepic">
+                </div>
+                <div class="col">
+                    <h4>John Smith</h4>
+                    <p id="udettxt">nick@mail.com</p>
+                    <p id="udettxt">+1888 888 88888</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="options">
+            <div class="row" onclick="location.href='#/tab/manage_addresses'">
+                <div class="col-10" style="padding-top: 3%;">
+                    <i class="fas fa-map-marker-alt iconus"></i>
+                </div>
+                <div class="col">
+                    <h4 style="margin-left: 3%;">Adressess</h4>
+                </div>
+                <div class="col-10" style="padding-top: 4%;">
+                    <i class="fas fa-chevron-right" iconus2></i>
+                </div>
+              </div>
+              <div class="row" onclick="location.href='#/tab/cardinfo'">
+                <div class="col-10" style="padding-top: 3%;">
+                    <i class="far fa-credit-card iconus"></i>
+                </div>
+                <div class="col">
+                    <h4 style="margin-left: 3%;">Manage Cards</h4>
+                </div>
+                <div class="col-10" style="padding-top: 4%;">
+                    <i class="fas fa-chevron-right" iconus2></i>
+                </div>
+              </div>
+        </div>
+
+      </div>
+    </ion-content>
+  </ion-view>
