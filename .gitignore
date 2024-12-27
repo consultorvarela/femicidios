@@ -8,3 +8,5 @@ uploads/menu
 
 api/config/connect.php
 conexion.php
+application/config/database.php
+database.php
