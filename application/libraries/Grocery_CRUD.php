@@ -380,14 +380,14 @@ class grocery_CRUD_Field_Types
 	 */
 	function character_limiter($str, $n = 500, $end_char = '&#8230;')
 	{
-		if (strlen($str) < $n)
+		if ($str !== null && strlen($str) < $n)
 		{
 			return $str;
 		}
 
 		// a bit complicated, but faster than preg_replace with \s+
-		$str = preg_replace('/ {2,}/', ' ', str_replace(array("\r", "\n", "\t", "\x0B", "\x0C"), ' ', $str));
-
+		$str = preg_replace('/ {2,}/', ' ', str_replace(array("\r", "\n", "\t", "\x0B", "\x0C"), ' ', $str ?? ''));
+		
 		if (strlen($str) <= $n)
 		{
 			return $str;
